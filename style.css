@@ -95,14 +95,6 @@ li {
     font-weight: 400;
   }
 
-  .navbar {
-    width: 100%;
-  }
-
-  .supporting-text {
-    font-size: 25px;
-  }
-
   .social-links {
     display: flex;
     list-style: none;
@@ -179,4 +171,3 @@ li {
     background-position: right bottom 60px; /* Adjust the value to move the image down */
   }
 }
-
