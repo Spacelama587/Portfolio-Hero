@@ -1,6 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
+# <h1> My Portfolio mobile first project </h1>
+</div>
 
 # 📗 Table of Contents
 
@@ -24,68 +26,49 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+# Hello Microverse project <a name="about-project"></a>
 
-# 📖 [your_project_name] <a name="about-project"></a>
+**Hello Microverse** is a HTML project that display a My Portfolio mobile first project.
 
-> Describe your project in 1 or 2 sentences.
+## 🛠 Built With <a name="built-with"></a>
 
-Portfolio: setup and mobile first is a responsive website project part of microverse week 1 curriculam
-
-## 🛠 Built With <a name="HTML and CSS"></a>
-
-### Tech Stack <a name="HTML5 AND css"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="#">None</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="#">None</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **RESPONSIVE**
-- **MOBILE FIRST APPROACH**
-
+- **Display colorfull text**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- [Demo link is coming soon](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -93,160 +76,101 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-
-```sh
-web browser
-text editor 
-node.js
-git
-```
-
+- You need to have NodeJS installed
+- A Web Browser Google Chrome, Firefox, etc
+- A Code Editor VSCode, Atom etc 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-
-
-
-```sh
-  cd my-folder
-   git clone https://github.com/Spacelama587/Portfolio.git
+```
+git clone https://github.com/Spacelama587/Portfolio-Hero.git
+cd your folder name
 ```
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  npm init-y
 ```
---->
+npm install
+```
+### Install
 
+Install Stylelint
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+````
+npx stylelint "**/*.{css,scss}"
+
+```
+npx stylelint "**/*.{css,scss}" --fix
+```
+
+```
+npm install
+```
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
- open project using live server
-```
---->
+open the project folder and Double-click on the index file (index.html)
 
 ### Run tests
 
 To run tests, run the following command:
 
-```
-npx hint .
-```
-
-- CSS linter errors run:
-
-```
-npx stylelint "**/*.{css,scss}"
-```
+N/A
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+Deploy this project on any websever
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 ** Vijith **
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/V1010101000)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-- LinkedIn: [V .](https://www.linkedin.com/in/v-24239b269/)
+- GitHub: [@githubhandle] https://github.com/Spacelama587
+- LinkedIn: [LinkedIn] https://www.linkedin.com/in/v/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **Project Sections**
-- [ ] **COntact Form**
-
+- [ ] **Add a hello animated illustration**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Spacelama587/Portfolio-Hero/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project give me a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank every who continues supporting me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
