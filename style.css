@@ -207,14 +207,15 @@ hr {
 
 .work1img {
   padding-top: 100px;
-  padding-left: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .work1-title h4 {
+  display: flex;
+  justify-content: center;
+  padding-right: 18%;
   padding-top: 40px;
-  padding-left: 20px;
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -223,7 +224,9 @@ hr {
 }
 
 .work1content p {
-  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -232,7 +235,7 @@ hr {
 
 .work1-tag {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
   padding-left: 20px;
 }
@@ -270,7 +273,7 @@ hr {
   color: #fff;
   border: none;
   box-shadow: none;
-  margin-left: 20px;
+  margin-left: 100px;
   margin-top: 25px;
 }
 
