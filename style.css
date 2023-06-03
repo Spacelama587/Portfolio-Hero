@@ -406,7 +406,7 @@ hr {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: ##fff;
+  color: #fff;
   border: none;
   box-shadow: none;
   margin-left: 20px;
@@ -436,9 +436,13 @@ hr {
 
 #skills h3 {
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Meera Inimai', sans-serif;
   font-weight: 700;
   margin: 3rem 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.1em;
 }
 
 .skills-title {
