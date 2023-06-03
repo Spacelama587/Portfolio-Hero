@@ -172,7 +172,7 @@ li {
   }
 }
 
-.title {
+.title h4{
   font-family: 'Crete Round', serif;
   padding-left: 20px;
   padding-top: 120px;
@@ -181,9 +181,10 @@ li {
 }
 
 hr {
-  width: 327px;
+  width: 325px;
   margin-top: 50px;
   border: 1px solid #212121;
+  margin-left: 20px;
 }
 
 .works {
@@ -198,7 +199,7 @@ hr {
   justify-content: flex-start;
 }
 
-.work1-title {
+.work1-title h4 {
   display: flex;
   justify-content: flex-start;
   padding-top: 40px;
