@@ -426,6 +426,7 @@ hr {
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
+  margin-bottom: 80px;
 }
 
 #skills h3 {
@@ -450,21 +451,54 @@ hr {
   margin-right: 10px;
 }
 
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
 #form-section fieldset{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   border: none;
   color: #979493;
 
 }
 
-#form-section p {
+.form-text {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
+  font-Weight: 700;
+  font-size: 24px;
+  line-height: 2rem;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: #172B4D;
+  text-align: center;
 }
 
-#contact-form {
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   border: none;
 }
@@ -473,23 +507,80 @@ hr {
   width: 100%;
   margin-bottom: 10px;
   border: none;
+  border-bottom: 1px solid #DBD8D7;
+  display: flex;
+  align-items: center;
 }
 
-#comments {
+#text-area {
   width: 100%;
   height: 100px;
   margin-bottom: 10px;
   border: none;
+  color: #3C3A39;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 12px;
+  padding-top: 10px;
+}
+
+#fullname, #email{
+font-weight: 400;
+font-size: 15px;
+line-height: 12px;
+padding-top: 30px;
+padding-bottom: 10px;
 }
 
 #submit {
   width: 150px;
+  height: 48px;
+  background: #ff6b00;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
-.line {
-  width: 250px;
-  background: #DBD8D7;
-  margin-top: 0.5px;
-  margin-right: 50%;
-  margin-left: 25%;
+#submit:hover {
+  background: #ff8900;
+}
+
+#submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ff6b00;
+}
+
+.footer-line {
+  width: 100%;
+}
+
+.footer-line hr {
+  border: none;
+  height: 1px;
+  background-color: #DFE1E6;
+  margin-bottom: 90px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50Px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-ul li {
+  margin: 0 10px;
+}
+
+.footer-ul li img {
+  display: block;
+  width: 30px;
+  height: 30px;
 }
