@@ -451,7 +451,6 @@ hr {
   margin-right: 10px;
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -466,7 +465,6 @@ form {
   justify-content: center;
   text-align: center;
 }
-
 
 #form-section fieldset{
   display: flex;
