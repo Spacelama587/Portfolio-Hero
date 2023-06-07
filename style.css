@@ -513,7 +513,7 @@ form {
   padding-top: 10px;
 }
 
-#fullname, 
+#fullname,
 #email {
   font-weight: 400;
   font-size: 15px;
@@ -526,7 +526,7 @@ form {
   width: 150px;
   height: 48px;
   background: #ff6b00;
-  color: #ffffff;
+  color: #fff;
   border: none;
   box-shadow: none;
   cursor: pointer;
