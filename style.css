@@ -426,6 +426,7 @@ hr {
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
+  margin-bottom: 80px;
 }
 
 #skills h3 {
@@ -448,4 +449,129 @@ hr {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 327px;
+  height: 330px;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#form-section fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  color: #979493;
+}
+
+.form-text {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2rem;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: #172b4d;
+  text-align: center;
+}
+
+.inputs {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+#text-area {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  border: none;
+  color: #3c3a39;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 12px;
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+#fullname,
+#email {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 12px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 295px;
+}
+
+#submit {
+  width: 150px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #ff8900;
+}
+
+#submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ff6b00;
+}
+
+.footer-line hr {
+  border: none;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-ul li {
+  margin: 0 10px;
+}
+
+.footer-ul li img {
+  display: block;
+  width: 30px;
+  height: 30px;
 }
