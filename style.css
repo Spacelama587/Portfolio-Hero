@@ -456,7 +456,8 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 327px;
+  height: 330px;
 }
 
 #form-section {
@@ -522,6 +523,7 @@ form {
   line-height: 12px;
   padding-top: 30px;
   padding-bottom: 10px;
+  width: 295px;
 }
 
 #submit {
