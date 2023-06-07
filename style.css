@@ -450,3 +450,46 @@ hr {
   margin-right: 10px;
 }
 
+#form-section fieldset{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: #979493;
+
+}
+
+#form-section p {
+  margin-bottom: 50px;
+}
+
+#contact-form {
+  width: 300px;
+  border: none;
+}
+
+.inputs {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+#comments {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+#submit {
+  width: 150px;
+}
+
+.line {
+  width: 250px;
+  background: #DBD8D7;
+  margin-top: 0.5px;
+  margin-right: 50%;
+  margin-left: 25%;
+}
