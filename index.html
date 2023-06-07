@@ -313,5 +313,51 @@
     </div>
   </section>
   
+   <!--Form section-->
+   <section id="form-section">
+    <p>
+      I'm always interested in hearing about new projects, so if you'd like to
+      chat please get in touch.
+    </p>
+    
+    <form
+     
+      method="POST"
+      id="contact-form"
+    >
+      <fieldset>
+        <input
+          class="inputs"
+          type="text"
+          name="full-name"
+          id="fullname"
+          maxlength="30"
+          placeholder="Full name"
+          required
+        />
+        <hr class="line" />
+        <input
+          class="inputs"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+          required
+        />
+        <hr class="line" />
+        <textarea
+          name="comments"
+          id="comments"
+          maxlength="500"
+          placeholder="write me something"
+        ></textarea>
+      </fieldset> 
+
+
+      <!-- the button -->
+      <input type="submit" id="submit" name="submit" value="Get in touch" />
+    </form>
+  </section>
+
 </body>
 </html>
