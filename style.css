@@ -499,6 +499,7 @@ form {
   border-bottom: 1px solid #dbd8d7;
   display: flex;
   align-items: center;
+  padding-left: 10%
 }
 
 #text-area {
@@ -511,6 +512,7 @@ form {
   font-size: 15px;
   line-height: 12px;
   padding-top: 10px;
+  padding-left: 10%
 }
 
 #fullname,
