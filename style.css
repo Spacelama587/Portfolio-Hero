@@ -456,6 +456,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 300px;
 }
 
 #form-section {
@@ -466,7 +467,7 @@ form {
   text-align: center;
 }
 
-#form-section fieldset{
+#form-section fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,7 +475,6 @@ form {
   text-align: center;
   border: none;
   color: #979493;
-
 }
 
 .form-text {
@@ -482,30 +482,21 @@ form {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  font-Weight: 700;
+  font-weight: 700;
   font-size: 24px;
   line-height: 2rem;
   font-family: 'Inter', sans-serif;
   align-items: center;
   justify-content: center;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  border: none;
 }
 
 .inputs {
   width: 100%;
   margin-bottom: 10px;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   display: flex;
   align-items: center;
 }
@@ -515,26 +506,27 @@ form {
   height: 100px;
   margin-bottom: 10px;
   border: none;
-  color: #3C3A39;
+  color: #3c3a39;
   font-style: italic;
   font-size: 15px;
   line-height: 12px;
   padding-top: 10px;
 }
 
-#fullname, #email{
-font-weight: 400;
-font-size: 15px;
-line-height: 12px;
-padding-top: 30px;
-padding-bottom: 10px;
+#fullname, 
+#email {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 12px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #submit {
   width: 150px;
   height: 48px;
   background: #ff6b00;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   box-shadow: none;
   cursor: pointer;
@@ -549,21 +541,18 @@ padding-bottom: 10px;
   box-shadow: 0 0 0 2px #ff6b00;
 }
 
-.footer-line {
-  width: 100%;
-}
-
 .footer-line hr {
   border: none;
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   margin-bottom: 90px;
+  width: 100%;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 50Px;
+  margin-bottom: 50px;
 }
 
 .footer-ul {
