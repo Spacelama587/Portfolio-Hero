@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+textarea {
+  background-color: #FBF8F7;
+}
+
 .logo {
   padding-top: 30px;
 }
