@@ -13,7 +13,7 @@
 }
 
 textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
 }
 
 .logo {
@@ -222,11 +222,11 @@ li {
     line-height: 44px;
     color: #fff;
     padding-left: 5%;
-    padding-top: 5%
+    padding-top: 5%;
   }
 
   #mobile-para {
-    font-family: 'Inter',serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -926,7 +926,7 @@ form {
     background-image: url(./images/img-desk-4.svg);
   }
 
-  .hide-desk{
+  .hide-desk {
     display: none;
   }
 
