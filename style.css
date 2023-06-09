@@ -913,7 +913,7 @@ form {
     display: none;
   }
 
-  .description-aboutme-desktop {
+  #description-aboutme-desktop {
     padding-top: 1rem;
     padding-left: 5rem;
     font-family: 'Inter', serif;
@@ -921,7 +921,7 @@ form {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: "#f4f5f";
+    color: #f4f5f7;
   }
 
   .resume-btn {
