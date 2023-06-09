@@ -131,6 +131,7 @@ li {
   .work2-content-desktop {
     display: none;
   }
+
   .description-aboutme-desktop {
     display: none;
   }
@@ -662,7 +663,7 @@ form {
     line-height: 44px;
     padding-left: 145px;
   }
-  
+
   .social-links {
     flex-direction: column;
     justify-content: space-between;
@@ -688,9 +689,9 @@ form {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
-  
+
   .works {
     display: flex;
     flex-direction: column;
@@ -700,7 +701,7 @@ form {
   .title-works {
     display: flex;
     flex-direction: column;
-    padding-top:5rem;
+    padding-top: 5rem;
   }
 
   .title-works h4 {
@@ -741,14 +742,14 @@ form {
   .work1img {
     display: none;
   }
-  
+
   .project1 {
-    padding-top:5rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: row;
     gap: 5rem;
   }
- 
+
   .ImgProject1 {
     padding-top: 3rem;
     padding-left: 5rem;
@@ -769,9 +770,9 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
   }
-  
+
   .work2img-1 {
     background-image: url(./images/desk-project-1.png);
   }
@@ -779,7 +780,7 @@ form {
   .work2-content-1 {
     display: none;
   }
-  
+
   .work2tag-1 {
     display: none;
   }
@@ -791,10 +792,6 @@ form {
   .work2img-2 {
     background-image: url(./images/desk-2-img.svg);
     padding-top: 3rem;
-  }
-
-  .work2-content-1 {
-    display: none;
   }
 
   .work2tag-html,
@@ -810,31 +807,30 @@ form {
   }
 
   #desktop-title {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #fff;
     padding-top: 8rem;
     padding-left: 1rem;
   }
 
   #desktop-para {
-    font-family: 'Inter';
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: #fff;
     padding-top: 2rem;
     padding-left: 1rem;
   }
 
-.work2tag {
-   margin-top: -17rem;
-  
-}
+  .work2tag {
+    margin-top: -17rem;
+  }
 
   .work2img-3 {
     background-image: url(./images/img-desk-4.svg);
@@ -842,12 +838,12 @@ form {
   }
 
   #desktop-title-3 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #fff;
     padding-top: 45%;
     padding-left: 1rem;
   }
@@ -862,23 +858,23 @@ form {
   }
 
   #desktop-title-4 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #fff;
     padding-top: 3rem;
     padding-left: 1rem;
   }
 
   #desktop-para-4 {
-    font-family: 'Inter';
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: #fff;
     padding-top: 2rem;
     padding-left: 1rem;
   }
@@ -908,7 +904,7 @@ form {
     background-position: right;
   }
 
-  .about-me-description, 
+  .about-me-description,
   .title {
     text-align: left;
   }
@@ -917,15 +913,15 @@ form {
     display: none;
   }
 
- .description-aboutme-desktop {
-    padding-top:1rem;
+  .description-aboutme-desktop {
+    padding-top: 1rem;
     padding-left: 5rem;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #F4F5F7;
+    color: "#f4f5f";
   }
 
   .resume-btn {
@@ -979,7 +975,7 @@ form {
     flex-wrap: wrap;
   }
 
-  .names input{
+  .names input {
     flex: 1;
   }
 
