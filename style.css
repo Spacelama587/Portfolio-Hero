@@ -136,7 +136,7 @@ li {
     display: none;
   }
 
-  .description-aboutme-desktop {
+  #description-aboutme-desktop {
     display: none;
   }
 
@@ -145,6 +145,11 @@ li {
   }
 
   #lastname {
+    display: none;
+  }
+
+  #desktop-title,
+  #desktop-para {
     display: none;
   }
 
@@ -195,6 +200,40 @@ li {
 
   .description-desktop {
     display: none;
+  }
+
+  #desktop-title-3 {
+    display: none;
+  }
+
+  #desktop-title-4 {
+    display: none;
+  }
+
+  #desktop-para-4 {
+    display: none;
+  }
+
+  #mobile-title {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 5%;
+    padding-top: 5%
+  }
+
+  #mobile-para {
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-left: 5%;
+    padding-top: 5%;
   }
 }
 
@@ -852,10 +891,6 @@ form {
     padding-left: 1rem;
   }
 
-  .work2btn-div-3 {
-    display: none;
-  }
-
   .work2img-4 {
     background-image: url(./images/work2img.svg);
     padding-top: 5rem;
@@ -883,23 +918,15 @@ form {
     padding-left: 1rem;
   }
 
-  .work2btn-div-4 {
-    display: none;
-  }
-
   .work2img-5 {
     background-image: url(./images/desk-2-img.svg);
-  }
-
-  .work2btn-div-5 {
-    display: none;
   }
 
   .work2img-6 {
     background-image: url(./images/img-desk-4.svg);
   }
 
-  .work2btn-div-6 {
+  .hide-desk{
     display: none;
   }
 
