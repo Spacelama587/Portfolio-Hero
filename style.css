@@ -237,6 +237,15 @@ li {
     padding-left: 5%;
     padding-top: 5%;
   }
+
+  .work1-tag {
+    margin-left: -5%;
+    margin-top: 2%;
+  }
+
+  .button-work1 {
+    margin-left: 33px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -346,7 +355,6 @@ hr {
   color: #fff;
   border: none;
   box-shadow: none;
-  margin-left: 100px;
   margin-top: 25px;
 }
 
@@ -805,9 +813,13 @@ form {
     margin-left: -2rem;
   }
 
+  .button-work1 {
+    display: hidden;
+  }
+
   .button-work1-desktop {
     display: flex;
-    margin-left: 35rem;
+    margin-left: 40rem;
     margin-top: -10rem;
   }
 
