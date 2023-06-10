@@ -1012,9 +1012,13 @@ form {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 15rem;
+    text-align: left;
+    margin-top: -5rem;
   }
 
   #submit {
     grid-column: span 2;
+    margin-left: -10rem;
+    margin-top: 2rem;
   }
 }
