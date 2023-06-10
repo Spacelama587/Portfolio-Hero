@@ -1014,16 +1014,6 @@ form {
     margin-left: 15rem;
   }
 
-  .names {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-  }
-
-  .names input {
-    flex: 1;
-  }
-
   #submit {
     grid-column: span 2;
 }
