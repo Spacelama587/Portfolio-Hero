@@ -996,11 +996,11 @@ form {
     gap: 5rem;
     padding-top: 10rem;
   }
-  
+
   .form-text {
     display: none;
   }
-  
+
   .form-text-desktop {
     font-family: 'Inter', serif;
     font-style: normal;
@@ -1013,19 +1013,19 @@ form {
     align-items: flex-start;
     margin-left: 15rem;
   }
-  
+
   .names {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
   }
-  
+
   .names input {
     flex: 1;
   }
   
   #submit {
     grid-column: span 2; /* Expand the submit button to span two columns */
-  }
-  
+ }
+
 }
