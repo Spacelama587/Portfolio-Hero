@@ -990,17 +990,17 @@ form {
   }
 
   #form-section {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
     padding-top: 10rem;
   }
-
+  
   .form-text {
     display: none;
   }
-
+  
   .form-text-desktop {
     font-family: 'Inter', serif;
     font-style: normal;
@@ -1011,20 +1011,21 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 5rem;
+    margin-left: 15rem;
   }
-
+  
   .names {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
   }
-
+  
   .names input {
     flex: 1;
   }
-
+  
   #submit {
-    margin-left: -10rem;
+    grid-column: span 2; /* Expand the submit button to span two columns */
   }
+  
 }
