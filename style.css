@@ -370,7 +370,7 @@ hr {
   margin-top: 40px;
   justify-content: flex-start;
   height: 390px;
-  background-image: url(./images/work2img.svg);
+  background-image: url(./images/work2Img.svg);
   background-repeat: no-repeat;
 }
 
@@ -906,7 +906,7 @@ form {
   }
 
   .work2img-4 {
-    background-image: url(./images/work2img.svg);
+    background-image: url(./images/work2Img.svg);
     padding-top: 5rem;
   }
 

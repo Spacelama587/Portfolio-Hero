@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Demo link is coming soon](#)
+- [Live Demo](https://spacelama587.github.io/Portfolio-Hero/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
