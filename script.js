@@ -7,7 +7,6 @@ menu_btn.addEventListener('click', function () {
   menu_btn.classList.toggle('is-active');
   mobile_menu.classList.toggle('is-active');
 
-  
   if (logo.classList.contains('hide-logo')) {
     logo.classList.remove('hide-logo');
   } else {
