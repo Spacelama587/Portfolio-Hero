@@ -7,6 +7,7 @@ menu_btn.addEventListener('click', function () {
   menu_btn.classList.toggle('is-active');
   mobile_menu.classList.toggle('is-active');
 
+  
   if (logo.classList.contains('hide-logo')) {
     logo.classList.remove('hide-logo');
   } else {
@@ -14,7 +15,6 @@ menu_btn.addEventListener('click', function () {
   }
 });
 
-// Close mobile menu when a link is clicked
 menu_links.forEach((link) => {
   link.addEventListener('click', function () {
     menu_btn.classList.remove('is-active');
