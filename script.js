@@ -14,7 +14,6 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-
 menuLinks.forEach((link) => {
   link.addEventListener('click', () => {
     menuBtn.classList.remove('is-active');
