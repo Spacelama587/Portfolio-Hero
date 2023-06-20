@@ -188,13 +188,6 @@ li {
     align-items: center;
   }
 
-  /* stylelint-disable-next-line no-descending-specificity */
-  
-  .social-links li a {
-    padding-right: 15px;
-    padding-left: 10px;
-  }
-
   .description {
     padding-top: 10px;
     font-size: 20px;
@@ -324,6 +317,11 @@ li {
     text-decoration: none;
     color: #fff5e1;
     padding-top: 4rem;
+  }
+
+  .social-links li a {
+    padding-right: 15px;
+    padding-left: 10px;
   }
 
   .lines {
