@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .navbar {
   background-color: #3c3a39;
   display: flex;
@@ -125,6 +129,14 @@ li {
 }
 
 @media (max-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .logo{
+    padding-bottom: 3rem;
+  }
+
   .desktop-menu {
     display: none;
   }
@@ -245,6 +257,84 @@ li {
 
   .button-work1 {
     margin-left: 33px;
+  }
+
+  .ham {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    margin-left: 75%;
+    width:25px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top:2rem;
+  }
+
+  .ham:before,
+  .ham:after,
+  .ham .bar {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #67798E;
+    margin: 4px 6px;
+    transition: 0.4s;
+  }
+  
+  .ham.is-active:before {
+    transform: rotate(-45deg) translate(-6px, 4px);
+  }
+  
+  .ham.is-active:after {
+    transform: rotate(45deg) translate(-6px, -4px);
+  }  
+  
+  .ham.is-active .bar {
+    opacity: 0;
+  }
+
+  .logo.hide-logo {
+    display: none;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width:100%;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 1000;
+    background-color: #3C3A39;
+    transition: 0.4s;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .mobile-menu.is-active {
+    left: 0;
+  }
+
+  .mobile-menu a {
+   display: block;
+   padding-left: 50px;
+   text-decoration: none;
+   color: #FFF5E1;
+   padding-top: 2rem;
+  }
+
+  .lines{
+    color: #6F6C6B;
+    margin-top: 0.5rem;
   }
 }
 
@@ -668,6 +758,17 @@ form {
     display: none;
   }
 
+  .ham {
+    display: none;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
   .desktop-menu ul {
     display: flex;
     flex-wrap: wrap;
