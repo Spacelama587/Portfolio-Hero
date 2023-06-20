@@ -1,11 +1,11 @@
 const logo = document.querySelector('.logo');
-const menu_Btn = document.querySelector('.ham');
-const mobile_Menu = document.querySelector('.mobile-menu');
-const menu_Links = mobile_Menu.querySelectorAll('a');
+const menuBtn = document.querySelector('.ham');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menuLinks = mobileMenu.querySelectorAll('a');
 
-menu_Btn.addEventListener('click', () => {
-  menu_Btn.classList.toggle('is-active');
-  mobile_Menu.classList.toggle('is-active');
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('is-active');
+  mobileMenu.classList.toggle('is-active');
 
   if (logo.classList.contains('hide-logo')) {
     logo.classList.remove('hide-logo');
@@ -15,10 +15,10 @@ menu_Btn.addEventListener('click', () => {
 });
 
 
-menu_Links.forEach((link) => {
+menuLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    menu_Btn.classList.remove('is-active');
-    mobile_Menu.classList.remove('is-active');
+    menuBtn.classList.remove('is-active');
+    mobileMenu.classList.remove('is-active');
     logo.classList.remove('hide-logo');
   });
 });
