@@ -3,6 +3,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const menuLinks = mobileMenu.querySelectorAll('a');
 const modal = document.querySelector('#myModal');
 const closeButton = modal.querySelector('.close-button');
+const logo = document.querySelector('.logo');
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('is-active');
@@ -55,7 +56,7 @@ function createProjectElements(project) {
     projectTechnologies.appendChild(technologyItem);
   });
   projectContainer.appendChild(projectTechnologies);
-  
+
   const projectDetails = document.createElement('div');
   projectDetails.classList.add('project-details');
 
@@ -71,29 +72,28 @@ function createProjectElements(project) {
 
   projectContainer.appendChild(projectDetails);
 
-
   const projectLinks = document.createElement('div');
-projectLinks.classList.add('project-links');
+  projectLinks.classList.add('project-links');
 
-const liveLink = document.createElement('a');
-liveLink.setAttribute('href', project.liveLink);
-liveLink.classList.add('live-link');
-const liveLinkImage = document.createElement('img');
-liveLinkImage.setAttribute('src', './images/seelive.png');
-liveLinkImage.setAttribute('alt', 'Live Version');
-liveLink.appendChild(liveLinkImage);
-projectLinks.appendChild(liveLink);
+  const liveLink = document.createElement('a');
+  liveLink.setAttribute('href', project.liveLink);
+  liveLink.classList.add('live-link');
+  const liveLinkImage = document.createElement('img');
+  liveLinkImage.setAttribute('src', './images/seelive.png');
+  liveLinkImage.setAttribute('alt', 'Live Version');
+  liveLink.appendChild(liveLinkImage);
+  projectLinks.appendChild(liveLink);
 
-const sourceLink = document.createElement('a');
-sourceLink.setAttribute('href', project.sourceLink);
-sourceLink.classList.add('source-link');
-const sourceLinkImage = document.createElement('img');
-sourceLinkImage.setAttribute('src', './images/source.png');
-sourceLinkImage.setAttribute('alt', 'Source Code');
-sourceLink.appendChild(sourceLinkImage);
-projectLinks.appendChild(sourceLink);
+  const sourceLink = document.createElement('a');
+  sourceLink.setAttribute('href', project.sourceLink);
+  sourceLink.classList.add('source-link');
+  const sourceLinkImage = document.createElement('img');
+  sourceLinkImage.setAttribute('src', './images/source.png');
+  sourceLinkImage.setAttribute('alt', 'Source Code');
+  sourceLink.appendChild(sourceLinkImage);
+  projectLinks.appendChild(sourceLink);
 
-projectContainer.appendChild(projectLinks);
+  projectContainer.appendChild(projectLinks);
 
   const seeProjectButtons = projectContainer.querySelectorAll('.work2-btn, .button-work1');
   seeProjectButtons.forEach((button) => {
@@ -118,5 +118,3 @@ openModalButtons.forEach((button) => {
     modal.classList.add('show-modal');
   });
 });
-
-
