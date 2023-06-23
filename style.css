@@ -1154,8 +1154,7 @@ form {
 
 .project-name {
   color: #172b4d;
-  font-size: 32px;
-  font-family: Crete Round;
+  font-family: Crete Round, serif;
   line-height: 44px;
   margin-bottom: 1rem;
   font-size: 18px;
