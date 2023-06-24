@@ -182,8 +182,8 @@ function openModalWithProject2() {
 
   const closeButton = modal.querySelector('.close');
 
-  /* eslint-disable */
-  
+
+
   closeButton.addEventListener('click', closeModal);
 }
 
