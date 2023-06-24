@@ -113,8 +113,6 @@ const project = [{
 
 const button = document.querySelector('.button-work1');
 
-button.addEventListener('click', openModalWithProject1);
-
 function openModalWithProject1() {
 
   const modal = document.getElementById('myModal');
@@ -155,10 +153,7 @@ function openModalWithProject1() {
 
 button.addEventListener('click', openModalWithProject1);
 
-
-
 const button2 = document.querySelector('.work2-btn');
-button2.addEventListener('click', openModalWithProject2);
 
 function openModalWithProject2() {
 
@@ -171,7 +166,7 @@ function openModalWithProject2() {
     <span class="close">&times;</span>
     <h2>${project2.name}</h2>
     <ul>
-      ${project2.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project2.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project2.image}" alt="${project2.name}">
@@ -188,7 +183,7 @@ function openModalWithProject2() {
 
   const closeButton = modal.querySelector('.close');
 
-  function closeModa2() {
+  function closeModal2() {
 
     const modal = document.getElementById('myModal');
   
@@ -197,6 +192,8 @@ function openModalWithProject2() {
 
   closeButton.addEventListener('click', closeModal2);
 }
+
+button2.addEventListener('click', openModalWithProject2);
 
 const button3 = document.querySelector('.work2img-2');
 button3.addEventListener('click', openModalWithProject3);
@@ -212,7 +209,7 @@ function openModalWithProject3() {
     <span class="close">&times;</span>
     <h2>${project3.name}</h2>
     <ul>
-      ${project3.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project3.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project3.image}" alt="${project3.name}">
