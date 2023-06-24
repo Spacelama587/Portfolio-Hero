@@ -113,9 +113,7 @@ const project = [{
 
 const button = document.querySelector('.button-work1');
 
-function openModalWithProject1() {
-
-  const modal = document.getElementById('myModal');
+function openModalWithProject1() {const modal = document.getElementById('myModal');
 
   const project1 = project.find((project) => project.id === 1);
 
