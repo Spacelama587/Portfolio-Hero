@@ -113,15 +113,12 @@ const project = [{
 const button = document.querySelector('.button-work1');
 button.addEventListener('click', openModalWithProject1);
 
-
 function openModalWithProject1() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project1 = project.find(project => project.id === 1);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -140,35 +137,27 @@ function openModalWithProject1() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
-
 
 const button2 = document.querySelector('.work2-btn');
 button2.addEventListener('click', openModalWithProject2);
 
-
 function openModalWithProject2() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project2 = project.find(project => project.id === 2);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -187,19 +176,15 @@ function openModalWithProject2() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
 
@@ -207,13 +192,11 @@ const button3 = document.querySelector('.work2img-2');
 button3.addEventListener('click', openModalWithProject3);
 
 function openModalWithProject3() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project3 = project.find(project => project.id === 4);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -232,19 +215,15 @@ function openModalWithProject3() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
 
@@ -252,13 +231,11 @@ const button4 = document.querySelector('.work2img-3');
 button4.addEventListener('click', openModalWithProject4);
 
 function openModalWithProject4() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project4 = project.find(project => project.id === 5);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -277,20 +254,15 @@ function openModalWithProject4() {
   </div>
 `;
 
-
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
 
@@ -298,13 +270,11 @@ const button5 = document.querySelector('.work2img-4');
 button5.addEventListener('click', openModalWithProject5);
 
 function openModalWithProject5() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project5 = project.find(project => project.id === 6);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -323,19 +293,15 @@ function openModalWithProject5() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
 
@@ -343,13 +309,11 @@ const button6 = document.querySelector('.work2img-5');
 button6.addEventListener('click', openModalWithProject6);
 
 function openModalWithProject6() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project6 = project.find(project => project.id === 7);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -368,19 +332,14 @@ function openModalWithProject6() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
 
@@ -388,13 +347,11 @@ const button7 = document.querySelector('.work2img-6');
 button7.addEventListener('click', openModalWithProject7);
 
 function openModalWithProject7() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Find the project with id: 1 from the array
   const project7 = project.find(project => project.id === 7);
 
-  // Populate the modal with project details
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -413,18 +370,14 @@ function openModalWithProject7() {
   </div>
 `;
 
-
-  // Show the modal
   modal.style.display = 'block';
 
-  // Add click event listener to the close button
   const closeButton = modal.querySelector('.close');
   closeButton.addEventListener('click', closeModal);
 }
 function closeModal() {
-  // Get the modal element
+
   const modal = document.getElementById('myModal');
 
-  // Hide the modal
   modal.style.display = 'none';
 }
