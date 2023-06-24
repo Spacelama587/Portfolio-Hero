@@ -142,18 +142,20 @@ function openModalWithProject1() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
+  
+  function closeModal1() {
+
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
 
   closeButton.addEventListener('click', closeModal1);
 }
 
 button.addEventListener('click', openModalWithProject1);
 
-function closeModal1() {
 
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
-}
 
 const button2 = document.querySelector('.work2-btn');
 button2.addEventListener('click', openModalWithProject2);
@@ -186,16 +188,14 @@ function openModalWithProject2() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModa2() {
 
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
 
   closeButton.addEventListener('click', closeModal2);
-}
-/* eslint-disable */
-function closeModa2() {
-
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
 }
 
 const button3 = document.querySelector('.work2img-2');
@@ -229,13 +229,14 @@ function openModalWithProject3() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModal3() {
+
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
+  
   closeButton.addEventListener('click', closeModal3);
-}
-function closeModal3() {
-
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
 }
 
 const button4 = document.querySelector('.work2img-3');
@@ -269,14 +270,14 @@ function openModalWithProject4() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModal4() {
+
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
+
   closeButton.addEventListener('click', closeModal4);
-}
-
-function closeModal4() {
-
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
 }
 
 const button5 = document.querySelector('.work2img-4');
@@ -310,14 +311,14 @@ function openModalWithProject5() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModal5() {
+
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
+  
   closeButton.addEventListener('click', closeModal5);
-}
-
-function closeModal5() {
-
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
 }
 
 const button6 = document.querySelector('.work2img-5');
@@ -351,13 +352,12 @@ function openModalWithProject6() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModal6() {
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
   closeButton.addEventListener('click', closeModal6);
-}
-
-function closeModal6() {
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
 }
 
 const button7 = document.querySelector('.work2img-6');
@@ -391,12 +391,13 @@ function openModalWithProject7() {
 
   const closeButton = modal.querySelector('.close');
 
+  function closeModal7() {
+
+    const modal = document.getElementById('myModal');
+  
+    modal.style.display = 'none';
+  }
+  
   closeButton.addEventListener('click', closeModal7);
 }
 
-function closeModal7() {
-
-  const modal = document.getElementById('myModal');
-
-  modal.style.display = 'none';
-}
