@@ -140,10 +140,10 @@ function openModalWithProject1() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
+
 function closeModal() {
 
   const modal = document.getElementById('myModal');
@@ -181,10 +181,12 @@ function openModalWithProject2() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
+  /* eslint-disable */
+  
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
+
 function closeModal() {
 
   const modal = document.getElementById('myModal');
@@ -222,10 +224,9 @@ function openModalWithProject3() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
 function closeModal() {
 
   const modal = document.getElementById('myModal');
@@ -263,10 +264,10 @@ function openModalWithProject4() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
+
 function closeModal() {
 
   const modal = document.getElementById('myModal');
@@ -304,10 +305,10 @@ function openModalWithProject5() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
+
 function closeModal() {
 
   const modal = document.getElementById('myModal');
@@ -345,10 +346,9 @@ function openModalWithProject6() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
 
 function closeModal() {
   const modal = document.getElementById('myModal');
@@ -386,13 +386,14 @@ function openModalWithProject7() {
   modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
-  // eslint-disable-next-line no-redeclare
+
   closeButton.addEventListener('click', closeModal);
 }
-// eslint-disable-next-line no-redeclare
+
 function closeModal() {
 
   const modal = document.getElementById('myModal');
 
   modal.style.display = 'none';
 }
+/* eslint-enable */
