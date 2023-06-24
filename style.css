@@ -737,11 +737,6 @@ form {
   margin: 0 10px;
 }
 
-.footer-ul li img {
-  display: block;
-  width: 30px;
-  height: 30px;
-}
 
 /* desktop-version */
 
@@ -1212,4 +1207,10 @@ form {
   .links img {
     width: 100%;
   }
+}
+
+.footer-ul li img {
+  display: block;
+  width: 30px;
+  height: 30px;
 }
