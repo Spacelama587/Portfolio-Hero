@@ -1,8 +1,6 @@
 const menuBtn = document.querySelector('.ham');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuLinks = mobileMenu.querySelectorAll('a');
-const modal = document.querySelector('#myModal');
-const closeButton = modal.querySelector('.close-button');
 const logo = document.querySelector('.logo');
 
 menuBtn.addEventListener('click', () => {
@@ -24,7 +22,8 @@ menuLinks.forEach((link) => {
   });
 });
 
-const project = {
+const project = [{
+  id: 1,
   name: 'Multi Post Stories',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
@@ -34,87 +33,398 @@ const project = {
   technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
-};
+},
+{
+  id: 2,
+  name: 'Test',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-const projectsSection = document.querySelector('.projects-section');
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/id1.png',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
+{
+  id: 3,
+  name: 'Test2',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-function createProjectElements(project) {
-  const projectContainer = document.createElement('div');
-  projectContainer.classList.add('project');
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/modal-desk.png',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
+{
+  id: 4,
+  name: 'Multi Post Stories',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-  const projectName = document.createElement('h3');
-  projectName.textContent = project.name;
-  projectName.classList.add('project-name');
-  projectContainer.appendChild(projectName);
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/desk-2-img.svg',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
+{
+  id: 5,
+  name: 'Multi Post Stories',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-  const projectTechnologies = document.createElement('ul');
-  projectTechnologies.classList.add('project-technologies');
-  project.technologies.forEach((technology) => {
-    const technologyItem = document.createElement('li');
-    technologyItem.textContent = technology;
-    technologyItem.classList.add('technology-item');
-    projectTechnologies.appendChild(technologyItem);
-  });
-  projectContainer.appendChild(projectTechnologies);
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/modal-desk.png',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
+{
+  id: 6,
+  name: 'Multi Post Stories',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-  const projectDetails = document.createElement('div');
-  projectDetails.classList.add('project-details');
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/img-desk-4.svg',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
+{
+  
+  id: 7,
+  name: 'Multi Post Stories',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+  
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+    `,
+  image: './images/id1.png',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
 
-  const projectImage = document.createElement('img');
-  projectImage.setAttribute('src', project.image);
-  projectImage.classList.add('project-image');
-  projectDetails.appendChild(projectImage);
+}
+];
 
-  const projectDescription = document.createElement('p');
-  projectDescription.textContent = project.description;
-  projectDescription.classList.add('project-description');
-  projectDetails.appendChild(projectDescription);
+const button = document.querySelector('.button-work1');
+button.addEventListener('click', openModalWithProject1);
 
-  projectContainer.appendChild(projectDetails);
 
-  const projectLinks = document.createElement('div');
-  projectLinks.classList.add('project-links');
+function openModalWithProject1() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
 
-  const liveLink = document.createElement('a');
-  liveLink.setAttribute('href', project.liveLink);
-  liveLink.classList.add('live-link');
-  const liveLinkImage = document.createElement('img');
-  liveLinkImage.setAttribute('src', './images/seelive.png');
-  liveLinkImage.setAttribute('alt', 'Live Version');
-  liveLink.appendChild(liveLinkImage);
-  projectLinks.appendChild(liveLink);
+  // Find the project with id: 1 from the array
+  const project1 = project.find(project => project.id === 1);
 
-  const sourceLink = document.createElement('a');
-  sourceLink.setAttribute('href', project.sourceLink);
-  sourceLink.classList.add('source-link');
-  const sourceLinkImage = document.createElement('img');
-  sourceLinkImage.setAttribute('src', './images/source.png');
-  sourceLinkImage.setAttribute('alt', 'Source Code');
-  sourceLink.appendChild(sourceLinkImage);
-  projectLinks.appendChild(sourceLink);
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project1.name}</h2>
+    <ul>
+      ${project1.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project1.image}" alt="${project1.name}">
+      <p>${project1.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project1.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project1.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
 
-  projectContainer.appendChild(projectLinks);
 
-  const seeProjectButtons = projectContainer.querySelectorAll('.work2-btn, .button-work1');
-  seeProjectButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      modal.classList.add('show-modal');
-    });
-  });
+  // Show the modal
+  modal.style.display = 'block';
 
-  projectsSection.appendChild(projectContainer);
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
 }
 
-createProjectElements(project);
 
-closeButton.addEventListener('click', () => {
-  modal.classList.remove('show-modal');
-});
+const button2 = document.querySelector('.work2-btn');
+button2.addEventListener('click', openModalWithProject2);
 
-const openModalButtons = document.querySelectorAll('.work2-btn, .button-work1');
 
-openModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    modal.classList.add('show-modal');
-  });
-});
+function openModalWithProject2() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project2 = project.find(project => project.id === 2);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project2.name}</h2>
+    <ul>
+      ${project2.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project2.image}" alt="${project2.name}">
+      <p>${project2.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project2.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project2.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
+
+const button3 = document.querySelector('.work2img-2');
+button3.addEventListener('click', openModalWithProject3);
+
+function openModalWithProject3() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project3 = project.find(project => project.id === 4);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project3.name}</h2>
+    <ul>
+      ${project3.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project3.image}" alt="${project3.name}">
+      <p>${project3.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project3.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project3.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
+
+const button4 = document.querySelector('.work2img-3');
+button4.addEventListener('click', openModalWithProject4);
+
+function openModalWithProject4() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project4 = project.find(project => project.id === 5);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project4.name}</h2>
+    <ul>
+      ${project4.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project4.image}" alt="${project4.name}">
+      <p>${project4.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project4.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project4.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
+
+const button5 = document.querySelector('.work2img-4');
+button5.addEventListener('click', openModalWithProject5);
+
+function openModalWithProject5() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project5 = project.find(project => project.id === 6);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project5.name}</h2>
+    <ul>
+      ${project5.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project5.image}" alt="${project5.name}">
+      <p>${project5.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project5.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project5.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
+
+const button6 = document.querySelector('.work2img-5');
+button6.addEventListener('click', openModalWithProject6);
+
+function openModalWithProject6() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project6 = project.find(project => project.id === 7);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project6.name}</h2>
+    <ul>
+      ${project6.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project6.image}" alt="${project6.name}">
+      <p>${project6.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project6.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project6.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
+
+const button7 = document.querySelector('.work2img-6');
+button7.addEventListener('click', openModalWithProject7);
+
+function openModalWithProject7() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Find the project with id: 1 from the array
+  const project7 = project.find(project => project.id === 7);
+
+  // Populate the modal with project details
+  modal.innerHTML = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>${project7.name}</h2>
+    <ul>
+      ${project7.technologies.map(tech => `<li>${tech}</li>`).join('')}
+    </ul>
+    <div class="image-text-container">
+      <img src="${project7.image}" alt="${project7.name}">
+      <p>${project7.description}</p>
+    </div>
+    <div class="links">
+      <a href="${project7.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
+      <a href="${project7.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+    </div>
+  </div>
+`;
+
+
+  // Show the modal
+  modal.style.display = 'block';
+
+  // Add click event listener to the close button
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+}
+function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('myModal');
+
+  // Hide the modal
+  modal.style.display = 'none';
+}
