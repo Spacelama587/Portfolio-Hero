@@ -94,8 +94,8 @@ const project = [{
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
 },
+
 {
-  
   id: 7,
   name: 'Multi Post Stories',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
@@ -107,24 +107,26 @@ const project = [{
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
 
-}
+},
+
 ];
 
 const button = document.querySelector('.button-work1');
+
 button.addEventListener('click', openModalWithProject1);
 
 function openModalWithProject1() {
 
   const modal = document.getElementById('myModal');
 
-  const project1 = project.find(project => project.id === 1);
+  const project1 = project.find((project) => project.id === 1);
 
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project1.name}</h2>
     <ul>
-      ${project1.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project1.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project1.image}" alt="${project1.name}">
@@ -143,6 +145,8 @@ function openModalWithProject1() {
 
   closeButton.addEventListener('click', closeModal1);
 }
+
+button.addEventListener('click', openModalWithProject1);
 
 function closeModal1() {
 
