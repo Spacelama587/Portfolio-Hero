@@ -141,10 +141,10 @@ function openModalWithProject1() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal1);
 }
 
-function closeModal() {
+function closeModal1() {
 
   const modal = document.getElementById('myModal');
 
@@ -184,10 +184,10 @@ function openModalWithProject2() {
 
 
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal2);
 }
 /* eslint-disable */
-function closeModal() {
+function closeModa2() {
 
   const modal = document.getElementById('myModal');
 
@@ -225,9 +225,9 @@ function openModalWithProject3() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal3);
 }
-function closeModal() {
+function closeModal3() {
 
   const modal = document.getElementById('myModal');
 
@@ -265,10 +265,10 @@ function openModalWithProject4() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal4);
 }
 
-function closeModal() {
+function closeModal4() {
 
   const modal = document.getElementById('myModal');
 
@@ -306,10 +306,10 @@ function openModalWithProject5() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal5);
 }
 
-function closeModal() {
+function closeModal5() {
 
   const modal = document.getElementById('myModal');
 
@@ -347,10 +347,10 @@ function openModalWithProject6() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal6);
 }
 
-function closeModal() {
+function closeModal6() {
   const modal = document.getElementById('myModal');
 
   modal.style.display = 'none';
@@ -387,13 +387,12 @@ function openModalWithProject7() {
 
   const closeButton = modal.querySelector('.close');
 
-  closeButton.addEventListener('click', closeModal);
+  closeButton.addEventListener('click', closeModal7);
 }
 
-function closeModal() {
+function closeModal7() {
 
   const modal = document.getElementById('myModal');
 
   modal.style.display = 'none';
 }
-/* eslint-enable */
