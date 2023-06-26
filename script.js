@@ -274,103 +274,101 @@ window.onload = function () {
   
   dynProj.appendChild(section);
 
-const project = [{
-  id: 1,
-  name: 'Multi Post Stories',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+  const project = [{
+    id: 1,
+    name: 'Multi Post Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/modal-desk.png',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
- {
-  id: 2,
-  name: 'Professional Printing',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    image: './images/modal-desk.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    id: 2,
+    name: 'Professional Printing',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/id1.png',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
-{
-  id: 3,
-  name: 'Test2',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    image: './images/id1.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    id: 3,
+    name: 'Test2',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/modal-desk.png',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
-{
-  id: 4,
-  name: 'Data Dashboard',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    image: './images/modal-desk.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    id: 4,
+    name: 'Data Dashboard',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/desk-2-img.svg',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
-{
-  id: 5,
-  name: 'Website Portfolio',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    image: './images/desk-2-img.svg',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    id: 5,
+    name: 'Website Portfolio',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/img-desk-4.svg',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
-{
-  id: 6,
-  name: 'Professional Printing',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+    image: './images/img-desk-4.svg',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    id: 6,
+    name: 'Professional Printing',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
   `,
-  image: './images/work2Img.svg',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
+    image: './images/work2Img.svg',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
 
-{
-  id: 7,
-  name: 'Data Dashboard',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+  {
+    id: 7,
+    name: 'Data Dashboard',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
   
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
     `,
-  image: './images/desk-2-img.svg',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-
-},
-
+    image: './images/desk-2-img.svg',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
 ];
 
-const button = document.querySelector('.button-work1');
+  const button = document.querySelector('.button-work1');
 
-function openModalWithProject1() {
-  const modal = document.getElementById('myModal');
-  const project1 = project.find((project) => project.id === 1);
+  function openModalWithProject1() {
+    const modal = document.getElementById('myModal');
+    const project1 = project.find((project) => project.id === 1);
 
-  modal.innerHTML = `
-  <div class="modal-content">
+    modal.innerHTML = `
+    <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project1.name}</h2>
     <ul>
@@ -391,22 +389,22 @@ function openModalWithProject1() {
 
   modal.style.display = 'block';
   const closeButton = modal.querySelector('.close');
-  function closeModal1() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
+    function closeModal1() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+    closeButton.addEventListener('click', closeModal1);
   }
-  closeButton.addEventListener('click', closeModal1);
-}
 
-button.addEventListener('click', openModalWithProject1);
+  button.addEventListener('click', openModalWithProject1);
 
-const button2 = document.querySelector('.work2-btn');
+  const button2 = document.querySelector('.work2-btn');
 
-function openModalWithProject2() {
-  const modal = document.getElementById('myModal');
-  const project2 = project.find((project) => project.id === 2);
-  modal.innerHTML = `
-  <div class="modal-content">
+  function openModalWithProject2() {
+    const modal = document.getElementById('myModal');
+    const project2 = project.find((project) => project.id === 2);
+    modal.innerHTML = `
+    <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project2.name}</h2>
     <ul>
@@ -550,14 +548,14 @@ function openModalWithProject5() {
   closeButton.addEventListener('click', closeModal5);
 }
 
-button5.addEventListener('click', openModalWithProject5);
+  button5.addEventListener('click', openModalWithProject5);
 
-const button6 = document.querySelector('.work2img-5');
+  const button6 = document.querySelector('.work2img-5');
 
-function openModalWithProject6() {
-  const modal = document.getElementById('myModal');
+  function openModalWithProject6() {
+    const modal = document.getElementById('myModal');
 
-  const project6 = project.find((project) => project.id === 7);
+    const project6 = project.find((project) => project.id === 7);
 
   modal.innerHTML = `
   <div class="modal-content">
@@ -588,13 +586,13 @@ function openModalWithProject6() {
   closeButton.addEventListener('click', closeModal6);
 }
 button6.addEventListener('click', openModalWithProject6);
-const button7 = document.querySelector('.work2img-6');
+  const button7 = document.querySelector('.work2img-6');
 
-function openModalWithProject7() {
-  const modal = document.getElementById('myModal');
-  const project7 = project.find((project) => project.id === 5);
-  modal.innerHTML = `
-  <div class="modal-content">
+  function openModalWithProject7() {
+    const modal = document.getElementById('myModal');
+    const project7 = project.find((project) => project.id === 5);
+    modal.innerHTML = `
+    <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project7.name}</h2>
     <ul>
