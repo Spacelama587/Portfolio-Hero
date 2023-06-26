@@ -23,8 +23,8 @@ menuLinks.forEach((link) => {
 });
 
 window.onload = function () {
-  let dynProj = document.querySelector('.dyn-proj');
-  let section = document.createElement('section');
+  const dynProj = document.querySelector('.dyn-proj');
+  const section = document.createElement('section');
   section.setAttribute('class', 'works');
   section.setAttribute('id', 'portfolio-red');
   section.innerHTML = `
@@ -271,9 +271,7 @@ window.onload = function () {
     </div>
   </div>
   `;
-  
   dynProj.appendChild(section);
-
   const project = [{
     id: 1,
     name: 'Multi Post Stories',
@@ -359,7 +357,7 @@ window.onload = function () {
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
-];
+  ];
 
   const button = document.querySelector('.button-work1');
 
@@ -387,8 +385,8 @@ window.onload = function () {
   </div>
 `;
 
-  modal.style.display = 'block';
-  const closeButton = modal.querySelector('.close');
+    modal.style.display = 'block';
+    const closeButton = modal.querySelector('.close');
     function closeModal1() {
       const modal = document.getElementById('myModal');
       modal.style.display = 'none';
@@ -421,28 +419,28 @@ window.onload = function () {
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
-  function closeModal2() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-  }
+    function closeModal2() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
 
   closeButton.addEventListener('click', closeModal2);
 }
 
-button2.addEventListener('click', openModalWithProject2);
+  button2.addEventListener('click', openModalWithProject2);
 
-const button3 = document.querySelector('.work2img-2');
+  const button3 = document.querySelector('.work2img-2');
 
-function openModalWithProject3() {
-  const modal = document.getElementById('myModal');
+  function openModalWithProject3() {
+    const modal = document.getElementById('myModal');
 
-  const project3 = project.find((project) => project.id === 4);
+    const project3 = project.find((project) => project.id === 4);
 
-  modal.innerHTML = `
+    modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project3.name}</h2>
@@ -460,27 +458,27 @@ function openModalWithProject3() {
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
 
-  function closeModal3() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
+    function closeModal3() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+    closeButton.addEventListener('click', closeModal3);
   }
-  closeButton.addEventListener('click', closeModal3);
-}
 
-button3.addEventListener('click', openModalWithProject3);
+  button3.addEventListener('click', openModalWithProject3);
 
-const button4 = document.querySelector('.work2img-3');
+  const button4 = document.querySelector('.work2img-3');
 
-function openModalWithProject4() {
-  const modal = document.getElementById('myModal');
+  function openModalWithProject4() {
+    const modal = document.getElementById('myModal');
 
-  const project4 = project.find((project) => project.id === 5);
+    const project4 = project.find((project) => project.id === 5);
 
-  modal.innerHTML = `
+    modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project4.name}</h2>
@@ -498,28 +496,28 @@ function openModalWithProject4() {
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
-  function closeModal4() {
+    function closeModal4() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'none';
   }
-  closeButton.addEventListener('click', closeModal4);
-}
+    closeButton.addEventListener('click', closeModal4);
+  }
 
-button4.addEventListener('click', openModalWithProject4);
+  button4.addEventListener('click', openModalWithProject4);
 
-const button5 = document.querySelector('.work2img-4');
+  const button5 = document.querySelector('.work2img-4');
 
-function openModalWithProject5() {
-  const modal = document.getElementById('myModal');
+  function openModalWithProject5() {
+    const modal = document.getElementById('myModal');
 
-  const project5 = project.find((project) => project.id === 6);
+    const project5 = project.find((project) => project.id === 6);
 
-  modal.innerHTML = `
-  <div class="modal-content">
+    modal.innerHTML = `
+    <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project5.name}</h2>
     <ul>
@@ -536,17 +534,17 @@ function openModalWithProject5() {
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
-  function closeModal5() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-  }
+    function closeModal5() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
 
   closeButton.addEventListener('click', closeModal5);
-}
+  }
 
   button5.addEventListener('click', openModalWithProject5);
 
@@ -557,7 +555,7 @@ function openModalWithProject5() {
 
     const project6 = project.find((project) => project.id === 7);
 
-  modal.innerHTML = `
+    modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project6.name}</h2>
@@ -575,16 +573,17 @@ function openModalWithProject5() {
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
-  function closeModal6() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-  }
+    function closeModal6() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
   closeButton.addEventListener('click', closeModal6);
-}
+  }
+
 button6.addEventListener('click', openModalWithProject6);
   const button7 = document.querySelector('.work2img-6');
 
@@ -609,17 +608,17 @@ button6.addEventListener('click', openModalWithProject6);
   </div>
 `;
 
-  modal.style.display = 'block';
+    modal.style.display = 'block';
 
   const closeButton = modal.querySelector('.close');
 
-  function closeModal7() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-  }
+    function closeModal7() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
 
-  closeButton.addEventListener('click', closeModal7);
-}
+   closeButton.addEventListener('click', closeModal7);
+  }
 
   button7.addEventListener('click', openModalWithProject7);
 };
