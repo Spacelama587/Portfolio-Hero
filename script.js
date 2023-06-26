@@ -623,5 +623,5 @@ function openModalWithProject7() {
   closeButton.addEventListener('click', closeModal7);
 }
 
-button7.addEventListener('click', openModalWithProject7);
+  button7.addEventListener('click', openModalWithProject7);
 };
