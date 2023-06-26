@@ -36,7 +36,7 @@ const project = [{
 },
 {
   id: 2,
-  name: 'Test',
+  name: 'Professional Printing',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
@@ -60,7 +60,7 @@ const project = [{
 },
 {
   id: 4,
-  name: 'Multi Post Stories',
+  name: 'Data Dashboard',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
@@ -72,19 +72,7 @@ const project = [{
 },
 {
   id: 5,
-  name: 'Multi Post Stories',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
-  `,
-  image: './images/modal-desk.png',
-  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  liveLink: 'https://example.com/project1',
-  sourceLink: 'https://github.com/user/project1',
-},
-{
-  id: 6,
-  name: 'Multi Post Stories',
+  name: 'Website Portfolio',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
@@ -94,15 +82,27 @@ const project = [{
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
 },
+{
+  id: 6,
+  name: 'Professional Printing',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+  `,
+  image: './images/work2Img.svg',
+  technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+  liveLink: 'https://example.com/project1',
+  sourceLink: 'https://github.com/user/project1',
+},
 
 {
   id: 7,
-  name: 'Multi Post Stories',
+  name: 'Data Dashboard',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
   
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
     `,
-  image: './images/id1.png',
+  image: './images/desk-2-img.svg',
   technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
@@ -128,9 +128,11 @@ function openModalWithProject1() {const modal = document.getElementById('myModal
       <img src="${project1.image}" alt="${project1.name}">
       <p>${project1.description}</p>
     </div>
-    <div class="links">
+    <div class = link-container>
+    <div class="links-b">
       <a href="${project1.liveLink}" target="_blank"><img src="./images/seelive.png" ></a>
       <a href="${project1.sourceLink}" target="_blank"><img src="./images/source.png" ></a>
+      </div>
     </div>
   </div>
 `;
@@ -362,7 +364,7 @@ function openModalWithProject7() {
 
   const modal = document.getElementById('myModal');
 
-  const project7 = project.find(project => project.id === 7);
+  const project7 = project.find(project => project.id === 5);
 
   modal.innerHTML = `
   <div class="modal-content">
