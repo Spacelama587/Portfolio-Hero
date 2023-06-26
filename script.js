@@ -113,9 +113,8 @@ const project = [{
 
 const button = document.querySelector('.button-work1');
 
-function openModalWithProject1() { 
+function openModalWithProject1() {
   const modal = document.getElementById('myModal');
-
   const project1 = project.find((project) => project.id === 1);
 
   modal.innerHTML = `
@@ -139,9 +138,7 @@ function openModalWithProject1() {
 `;
 
   modal.style.display = 'block';
-
   const closeButton = modal.querySelector('.close');
-  
   function closeModal1() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'none';
@@ -219,9 +216,7 @@ function openModalWithProject3() {
   const closeButton = modal.querySelector('.close');
 
   function closeModal3() {
-
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
   
@@ -231,7 +226,6 @@ function openModalWithProject3() {
 button3.addEventListener('click', openModalWithProject3);
 
 const button4 = document.querySelector('.work2img-3');
-button4.addEventListener('click', openModalWithProject4);
 
 function openModalWithProject4() {
   const modal = document.getElementById('myModal');
@@ -243,7 +237,7 @@ function openModalWithProject4() {
     <span class="close">&times;</span>
     <h2>${project4.name}</h2>
     <ul>
-      ${project4.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project4.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project4.image}" alt="${project4.name}">
@@ -267,11 +261,11 @@ function openModalWithProject4() {
   }
   closeButton.addEventListener('click', closeModal4);
 }
+button4.addEventListener('click', openModalWithProject4);
 
 const button5 = document.querySelector('.work2img-4');
 
 function openModalWithProject5() {
-
   const modal = document.getElementById('myModal');
 
   const project5 = project.find(project => project.id === 6);
@@ -299,12 +293,11 @@ function openModalWithProject5() {
   const closeButton = modal.querySelector('.close');
 
   function closeModal5() {
-
     const modal = document.getElementById('myModal');
   
     modal.style.display = 'none';
   }
-  
+
   closeButton.addEventListener('click', closeModal5);
 }
 
@@ -322,7 +315,7 @@ function openModalWithProject6() {
     <span class="close">&times;</span>
     <h2>${project6.name}</h2>
     <ul>
-      ${project6.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project6.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project6.image}" alt="${project6.name}">
@@ -346,22 +339,18 @@ function openModalWithProject6() {
   }
   closeButton.addEventListener('click', closeModal6);
 }
-
 button6.addEventListener('click', openModalWithProject6);
-
 const button7 = document.querySelector('.work2img-6');
 
 function openModalWithProject7() {
   const modal = document.getElementById('myModal');
-
-  const project7 = project.find(project => project.id === 5);
-
+  const project7 = project.find((project) => project.id === 5);
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project7.name}</h2>
     <ul>
-      ${project7.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project7.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project7.image}" alt="${project7.name}">
@@ -379,12 +368,11 @@ function openModalWithProject7() {
   const closeButton = modal.querySelector('.close');
 
   function closeModal7() {
-
     const modal = document.getElementById('myModal');
   
     modal.style.display = 'none';
   }
-  
+
   closeButton.addEventListener('click', closeModal7);
 }
 
