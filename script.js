@@ -113,7 +113,8 @@ const project = [{
 
 const button = document.querySelector('.button-work1');
 
-function openModalWithProject1() {const modal = document.getElementById('myModal');
+function openModalWithProject1() { 
+  const modal = document.getElementById('myModal');
 
   const project1 = project.find((project) => project.id === 1);
 
@@ -142,12 +143,9 @@ function openModalWithProject1() {const modal = document.getElementById('myModal
   const closeButton = modal.querySelector('.close');
   
   function closeModal1() {
-
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
-
   closeButton.addEventListener('click', closeModal1);
 }
 
@@ -156,11 +154,8 @@ button.addEventListener('click', openModalWithProject1);
 const button2 = document.querySelector('.work2-btn');
 
 function openModalWithProject2() {
-
   const modal = document.getElementById('myModal');
-
-  const project2 = project.find(project => project.id === 2);
-
+  const project2 = project.find((project) => project.id === 2);
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -184,9 +179,7 @@ function openModalWithProject2() {
   const closeButton = modal.querySelector('.close');
 
   function closeModal2() {
-
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
 
@@ -196,7 +189,6 @@ function openModalWithProject2() {
 button2.addEventListener('click', openModalWithProject2);
 
 const button3 = document.querySelector('.work2img-2');
-button3.addEventListener('click', openModalWithProject3);
 
 function openModalWithProject3() {
 
@@ -236,14 +228,15 @@ function openModalWithProject3() {
   closeButton.addEventListener('click', closeModal3);
 }
 
+button3.addEventListener('click', openModalWithProject3);
+
 const button4 = document.querySelector('.work2img-3');
 button4.addEventListener('click', openModalWithProject4);
 
 function openModalWithProject4() {
-
   const modal = document.getElementById('myModal');
 
-  const project4 = project.find(project => project.id === 5);
+  const project4 = project.find((project) => project.id === 5);
 
   modal.innerHTML = `
   <div class="modal-content">
@@ -268,17 +261,14 @@ function openModalWithProject4() {
   const closeButton = modal.querySelector('.close');
 
   function closeModal4() {
-
     const modal = document.getElementById('myModal');
   
     modal.style.display = 'none';
   }
-
   closeButton.addEventListener('click', closeModal4);
 }
 
 const button5 = document.querySelector('.work2img-4');
-button5.addEventListener('click', openModalWithProject5);
 
 function openModalWithProject5() {
 
@@ -318,11 +308,11 @@ function openModalWithProject5() {
   closeButton.addEventListener('click', closeModal5);
 }
 
+button5.addEventListener('click', openModalWithProject5);
+
 const button6 = document.querySelector('.work2img-5');
-button6.addEventListener('click', openModalWithProject6);
 
 function openModalWithProject6() {
-
   const modal = document.getElementById('myModal');
 
   const project6 = project.find(project => project.id === 7);
@@ -357,11 +347,11 @@ function openModalWithProject6() {
   closeButton.addEventListener('click', closeModal6);
 }
 
+button6.addEventListener('click', openModalWithProject6);
+
 const button7 = document.querySelector('.work2img-6');
-button7.addEventListener('click', openModalWithProject7);
 
 function openModalWithProject7() {
-
   const modal = document.getElementById('myModal');
 
   const project7 = project.find(project => project.id === 5);
@@ -398,3 +388,4 @@ function openModalWithProject7() {
   closeButton.addEventListener('click', closeModal7);
 }
 
+button7.addEventListener('click', openModalWithProject7);
