@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelector('.ham');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuLinks = mobileMenu.querySelectorAll('a');
@@ -22,159 +23,259 @@ menuLinks.forEach((link) => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const section = document.createElement('section');
-  section.className = 'works';
-  section.id = 'portfolio-red';
-  const titleWorksDiv = document.createElement('div');
-  titleWorksDiv.className = 'title-works';
-  const title = document.createElement('h4');
-  title.textContent = 'My Recent Works';
-  const lineDesktopDiv = document.createElement('div');
-  lineDesktopDiv.className = 'line-desktop';
-  const hr = document.createElement('hr');
-  titleWorksDiv.appendChild(title);
-  lineDesktopDiv.appendChild(hr);
-  titleWorksDiv.appendChild(lineDesktopDiv);
-  section.appendChild(titleWorksDiv);
-  const work1ImgDiv = document.createElement('div');
-  work1ImgDiv.className = 'work1img';
-  const work1Img = document.createElement('img');
-  work1Img.src = 'images/workImg1.svg';
-  work1ImgDiv.appendChild(work1Img);
-  section.appendChild(work1ImgDiv);
-  const project1Div = document.createElement('div');
-  project1Div.className = 'project1';
+window.onload = function() {
+  var dynProj = document.querySelector('.dyn-proj');
+  var section = document.createElement('section');
+  section.setAttribute('class', 'works');
+  section.setAttribute('id', 'portfolio-red');
+  
+  section.innerHTML = `
+    <div class="title-works">
+      <h4>My Recent Works</h4>
+      <div class="line-desktop">
+        <hr>
+      </div>
+    </div>
+    <div class="work1img">
+      <img src="images/workImg1.svg">
+  
+    </div>
+    
+    <div class="project1">
+      <div class="ImgProject1">
+      <img src="images/ImgProject1-desktop.svg">
+      </div>
+      <div class="work-titl-content-tag">
+        <div class="work1-title">
+          <h4> Multi-Post Stories </h4>
+         </div>
+        <div class="work1content">
+         <p>A daily selection of privately personalized <br />  reads; no accounts or sign-ups required. <br />  has been the industry's standard dummy <br />  text ever since the 1500s, when an <br />  unknown printer took a standard dummy <br />  text.</p>
+        </div>
+        <div class="work1-tag">
+         <div class="work1tag-css">
+           <img src="images/Tag.png">
+         </div>
+         <div class="work1tag-html">
+           <img src="images/Tag (1).png">
+         </div>
+         <div class="work1tag-bootstrap">
+           <img src="images/Tag (2).png">
+         </div>
+         <div class="work1tag-ruby">
+           <img src="images/Tag (3).png">
+         </div>
+        </div>
+      </div>
+      
+  </div>
+  
+  <div class="button-work1-desktop">
+    <button class="button-work1">See project</button>
+   </div>
 
-  const imgProject1Div = document.createElement('div');
-  imgProject1Div.className = 'ImgProject1';
-  const imgProject1 = document.createElement('img');
-  imgProject1.src = 'images/ImgProject1-desktop.svg';
-  imgProject1Div.appendChild(imgProject1);
-  const workTitleContentTagDiv = document.createElement('div');
-  workTitleContentTagDiv.className = 'work-titl-content-tag';
-  const work1TitleDiv = document.createElement('div');
-  work1TitleDiv.className = 'work1-title';
-  const work1Title = document.createElement('h4');
-  work1Title.textContent = 'Multi-Post Stories';
-  work1TitleDiv.appendChild(work1Title);
-  const work1ContentDiv = document.createElement('div');
-  work1ContentDiv.className = 'work1content';
-  const work1Content = document.createElement('p');
-  work1Content.innerHTML = "A daily selection of privately personalized<br />reads; no accounts or sign-ups required.<br />Has been the industry's standard dummy<br />text ever since the 1500s, when an<br />unknown printer took a standard dummy<br />text.";
-  work1ContentDiv.appendChild(work1Content);
-  const work1TagDiv = document.createElement('div');
-  work1TagDiv.className = 'work1-tag';
-  const work1TagCssDiv = document.createElement('div');
-  work1TagCssDiv.className = 'work1tag-css';
-  const work1TagCssImg = document.createElement('img');
-  work1TagCssImg.src = 'images/Tag.png';
-  work1TagCssDiv.appendChild(work1TagCssImg);
-  const work1TagHtmlDiv = document.createElement('div');
-  work1TagHtmlDiv.className = 'work1tag-html';
-  const work1TagHtmlImg = document.createElement('img');
-  work1TagHtmlImg.src = 'images/Tag (1).png';
-  work1TagHtmlDiv.appendChild(work1TagHtmlImg);
-  const work1TagBootstrapDiv = document.createElement('div');
-  work1TagBootstrapDiv.className = 'work1tag-bootstrap';
-  const work1TagBootstrapImg = document.createElement('img');
-  work1TagBootstrapImg.src = 'images/Tag (2).png';
-  work1TagBootstrapDiv.appendChild(work1TagBootstrapImg);
-  const work1TagRubyDiv = document.createElement('div');
-  work1TagRubyDiv.className = 'work1tag-ruby';
-  const work1TagRubyImg = document.createElement('img');
-  work1TagRubyImg.src = 'images/Tag (3).png';
-  work1TagRubyDiv.appendChild(work1TagRubyImg);
-  work1TagDiv.appendChild(work1TagCssDiv);
-  work1TagDiv.appendChild(work1TagHtmlDiv);
-  work1TagDiv.appendChild(work1TagBootstrapDiv);
-  work1TagDiv.appendChild(work1TagRubyDiv);
-  workTitleContentTagDiv.appendChild(work1TitleDiv);
-  workTitleContentTagDiv.appendChild(work1ContentDiv);
-  workTitleContentTagDiv.appendChild(work1TagDiv);
+   <div class="projects">
+    <div class="work2img-1">
+      <div class="work2-content-1">
+      <div class="work2-content">
+        <h2>Profesional Art <br /> Printing Data</h2>
+        <p>A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+      </div>
+    </div>
+    <div class="work2tag-1">
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  project1Div.appendChild(imgProject1Div);
-  project1Div.appendChild(workTitleContentTagDiv);
-  section.appendChild(project1Div);
-  const buttonWork1DesktopDiv = document.createElement('div');
-  buttonWork1DesktopDiv.className = 'button-work1-desktop';
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  const buttonWork1 = document.createElement('button');
-  buttonWork1.className = 'button-work1';
-  buttonWork1.textContent = 'See project';
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+       
+        
+     </div>
+    </div>
 
-  buttonWork1DesktopDiv.appendChild(buttonWork1);
+     <div class="work2btn-div">
+      <button class="work2-btn">See project</button>
+    </div>
+    </div>
+    
 
-  section.appendChild(buttonWork1DesktopDiv);
+    <div class="work2img-2">
+      
+        
+        <div class="work2-content-2">
+          <h2 id="mobile-title">Profesional Art <br /> Printing Data</h2>
+          <p id="mobile-para">A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+          <h2 id="desktop-title">
+            Data Dashboard <br /> Healthcare</h2>
+            <p id="desktop-para">A daily selection of privately personalized <br />reads; no accounts or sign-ups required. <br />Has been the industry's standard.</p>
+        </div>
+       
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  const projectsDiv = document.createElement('div');
-  projectsDiv.className = 'projects';
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  const work2Img1Div = document.createElement('div');
-  work2Img1Div.className = 'work2img-1';
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+      
+     </div>
+     <div class="hide-desk">
+     <div class="work2btn-2-div-2">
+      <div class="work2btn-div">
+        <button class="work2-btn">See project</button>
+      </div>
+     </div>
+    </div>
+    </div>
 
-  const work2Content1Div = document.createElement('div');
-  work2Content1Div.className = 'work2-content-1';
+    <div class="work2img-3">
+      
+      
+      <div class="work2-content-2">
+        <h2 id="mobile-title">Profesional Art <br /> Printing Data</h2>
+        <p id="mobile-para">A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+        <h2 id="desktop-title-3">
+          Website Portfolio </h2>
+          <p id="desktop-para">A daily selection of privately personalized <br />reads; no accounts or sign-ups required. <br />Has been the industry's standard.</p>
+      </div>
 
-  const work2ContentDiv = document.createElement('div');
-  work2ContentDiv.className = 'work2-content';
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  const work2ContentTitle = document.createElement('h2');
-  work2ContentTitle.textContent = 'Profesional Art Printing Data';
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  const work2ContentPara = document.createElement('p');
-  work2ContentPara.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.";
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+         
+     </div>
+     <div class="hide-desk">
+      <div class="work2btn-2-div-2">
+       <div class="work2btn-div">
+         <button class="work2-btn">See project</button>
+       </div>
+      </div>
+     </div>
+   
+    </div>
 
-  work2ContentDiv.appendChild(work2ContentTitle);
-  work2ContentDiv.appendChild(work2ContentPara);
+    <div class="work2img-4">
+      <div class="work2-content-2">
+        <h2 id="mobile-title">Profesional Art <br /> Printing Data</h2>
+        <p id="mobile-para">A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+        <h2 id="desktop-title-4">
+          Profesional Art <br /> Printing Data </h2>
+          <p id="desktop-para-4">A daily selection of privately personalized <br />reads; no accounts or sign-ups required. <br />Has been the industry's standard.</p>
+      </div>
 
-  work2Content1Div.appendChild(work2ContentDiv);
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  work2Img1Div.appendChild(work2Content1Div);
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  const work2Tag1Div = document.createElement('div');
-  work2Tag1Div.className = 'work2tag-1';
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+        
+     </div>
+     <div class="hide-desk">
+      <div class="work2btn-2-div-2">
+       <div class="work2btn-div">
+         <button class="work2-btn">See project</button>
+       </div>
+      </div>
+     </div>
+    </div>
 
-  const work2TagDiv = document.createElement('div');
-  work2TagDiv.className = 'work2tag';
+    <div class="work2img-5">
+      <div class="work2-content-2">
+        <h2 id="mobile-title">Profesional Art <br /> Printing Data</h2>
+        <p id="mobile-para">A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+        <h2 id="desktop-title">
+          Data Dashboard <br /> Healthcare</h2>
+          <p id="desktop-para">A daily selection of privately personalized <br />reads; no accounts or sign-ups required. <br />Has been the industry's standard.</p>
+      </div>
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  const work2TagHtmlDiv = document.createElement('div');
-  work2TagHtmlDiv.className = 'work2tag-html';
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  const work2TagHtmlImg = document.createElement('img');
-  work2TagHtmlImg.src = './images/Tag (4).png';
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+       
+        
+     </div>
+     <div class="hide-desk">
+      <div class="work2btn-2-div-2">
+       <div class="work2btn-div">
+         <button class="work2-btn">See project</button>
+       </div>
+      </div>
+     </div>
+    </div>
 
-  work2TagHtmlDiv.appendChild(work2TagHtmlImg);
+    <div class="work2img-6">
+      <div class="work2-content-2">
+        <h2 id="mobile-title">Profesional Art <br /> Printing Data</h2>
+        <p id="mobile-para">A daily selection of privately <br />personalized reads; no accounts or <br />sign-ups required. Has been the <br />industry's standard.</p>
+        <h2 id="desktop-title-3">
+          Website Portfolio </h2>
+          <p id="desktop-para">A daily selection of privately personalized <br />reads; no accounts or sign-ups required. <br />Has been the industry's standard.</p>
+      </div>
 
-  const work2TagCssDiv = document.createElement('div');
-  work2TagCssDiv.className = 'work2tag-css';
+     <div class="work2tag">
+        <div class="work2tag-html">
+          <img src="./images/Tag (4).png">
+        </div>
 
-  const work2TagCssImg = document.createElement('img');
-  work2TagCssImg.src = './images/Tag (5).png';
+        <div class="work2tag-css">
+          <img src="./images/Tag (5).png">
+        </div>
 
-  work2TagCssDiv.appendChild(work2TagCssImg);
+        <div class="work2tag-bootstrap">
+          <img src="./images/Tag (6).png">
+        </div>
+       
+        
+     </div>
+     <div class="hide-desk">
+      <div class="work2btn-2-div-2">
+       <div class="work2btn-div">
+         <button class="work2-btn">See project</button>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  `;
+  
+  dynProj.appendChild(section);
 
-  const work2TagBootstrapDiv = document.createElement('div');
-  work2TagBootstrapDiv.className = 'work2tag-bootstrap';
-
-  const work2TagBootstrapImg = document.createElement('img');
-  work2TagBootstrapImg.src = './images/Tag (6).png';
-
-  work2TagBootstrapDiv.appendChild(work2TagBootstrapImg);
-
-  work2TagDiv.appendChild(work2TagHtmlDiv);
-  work2TagDiv.appendChild(work2TagCssDiv);
-  work2TagDiv.appendChild(work2TagBootstrapDiv);
-
-  work2Tag1Div.appendChild(work2TagDiv);
-
-  projectsDiv.appendChild(work2Img1Div);
-  projectsDiv.appendChild(work2Tag1Div);
-
-  section.appendChild(projectsDiv);
-
-  document.body.appendChild(section);
-});
 
 const project = [{
   id: 1,
@@ -526,3 +627,4 @@ function openModalWithProject7() {
 }
 
 button7.addEventListener('click', openModalWithProject7);
+};
