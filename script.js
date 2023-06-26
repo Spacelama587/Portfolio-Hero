@@ -428,8 +428,8 @@ window.onload = function () {
       modal.style.display = 'none';
     }
 
-  closeButton.addEventListener('click', closeModal2);
-}
+    closeButton.addEventListener('click', closeModal2);
+  }
 
   button2.addEventListener('click', openModalWithProject2);
 
@@ -460,7 +460,7 @@ window.onload = function () {
 
     modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
     function closeModal3() {
       const modal = document.getElementById('myModal');
@@ -501,9 +501,9 @@ window.onload = function () {
     const closeButton = modal.querySelector('.close');
 
     function closeModal4() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-  }
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
     closeButton.addEventListener('click', closeModal4);
   }
 
@@ -543,7 +543,7 @@ window.onload = function () {
       modal.style.display = 'none';
     }
 
-  closeButton.addEventListener('click', closeModal5);
+    closeButton.addEventListener('click', closeModal5);
   }
 
   button5.addEventListener('click', openModalWithProject5);
@@ -581,10 +581,10 @@ window.onload = function () {
       const modal = document.getElementById('myModal');
       modal.style.display = 'none';
     }
-  closeButton.addEventListener('click', closeModal6);
+    closeButton.addEventListener('click', closeModal6);
   }
 
-button6.addEventListener('click', openModalWithProject6);
+  button6.addEventListener('click', openModalWithProject6);
   const button7 = document.querySelector('.work2img-6');
 
   function openModalWithProject7() {
@@ -610,14 +610,14 @@ button6.addEventListener('click', openModalWithProject6);
 
     modal.style.display = 'block';
 
-  const closeButton = modal.querySelector('.close');
+    const closeButton = modal.querySelector('.close');
 
     function closeModal7() {
       const modal = document.getElementById('myModal');
       modal.style.display = 'none';
     }
 
-   closeButton.addEventListener('click', closeModal7);
+    closeButton.addEventListener('click', closeModal7);
   }
 
   button7.addEventListener('click', openModalWithProject7);
