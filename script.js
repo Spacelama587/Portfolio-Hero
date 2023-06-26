@@ -22,8 +22,7 @@ menuLinks.forEach((link) => {
   });
 });
 
-
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded', () => {
   const section = document.createElement('section');
   section.className = 'works';
   section.id = 'portfolio-red';
