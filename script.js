@@ -188,10 +188,9 @@ button2.addEventListener('click', openModalWithProject2);
 const button3 = document.querySelector('.work2img-2');
 
 function openModalWithProject3() {
-
   const modal = document.getElementById('myModal');
 
-  const project3 = project.find(project => project.id === 4);
+  const project3 = project.find((project) => project.id === 4);
 
   modal.innerHTML = `
   <div class="modal-content">
@@ -219,7 +218,6 @@ function openModalWithProject3() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'none';
   }
-  
   closeButton.addEventListener('click', closeModal3);
 }
 
@@ -256,11 +254,11 @@ function openModalWithProject4() {
 
   function closeModal4() {
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
-  }
+ }
   closeButton.addEventListener('click', closeModal4);
 }
+
 button4.addEventListener('click', openModalWithProject4);
 
 const button5 = document.querySelector('.work2img-4');
@@ -268,14 +266,14 @@ const button5 = document.querySelector('.work2img-4');
 function openModalWithProject5() {
   const modal = document.getElementById('myModal');
 
-  const project5 = project.find(project => project.id === 6);
+  const project5 = project.find((project) => project.id === 6);
 
   modal.innerHTML = `
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>${project5.name}</h2>
     <ul>
-      ${project5.technologies.map(tech => `<li>${tech}</li>`).join('')}
+      ${project5.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
     <div class="image-text-container">
       <img src="${project5.image}" alt="${project5.name}">
@@ -308,7 +306,7 @@ const button6 = document.querySelector('.work2img-5');
 function openModalWithProject6() {
   const modal = document.getElementById('myModal');
 
-  const project6 = project.find(project => project.id === 7);
+  const project6 = project.find((project) => project.id === 7);
 
   modal.innerHTML = `
   <div class="modal-content">
@@ -334,7 +332,6 @@ function openModalWithProject6() {
 
   function closeModal6() {
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
   closeButton.addEventListener('click', closeModal6);
@@ -369,7 +366,6 @@ function openModalWithProject7() {
 
   function closeModal7() {
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
 
