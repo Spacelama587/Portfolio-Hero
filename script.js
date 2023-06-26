@@ -255,7 +255,7 @@ function openModalWithProject4() {
   function closeModal4() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'none';
- }
+  }
   closeButton.addEventListener('click', closeModal4);
 }
 
@@ -292,7 +292,6 @@ function openModalWithProject5() {
 
   function closeModal5() {
     const modal = document.getElementById('myModal');
-  
     modal.style.display = 'none';
   }
 
