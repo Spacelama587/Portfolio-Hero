@@ -23,7 +23,7 @@ menuLinks.forEach((link) => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded',() => {
   const section = document.createElement('section');
   section.className = 'works';
   section.id = 'portfolio-red';
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
   work1ContentDiv.appendChild(work1Content);
   const work1TagDiv = document.createElement('div');
   work1TagDiv.className = 'work1-tag';
-  let work1TagCssDiv = document.createElement('div');
+  const work1TagCssDiv = document.createElement('div');
   work1TagCssDiv.className = 'work1tag-css';
   const work1TagCssImg = document.createElement('img');
   work1TagCssImg.src = 'images/Tag.png';
