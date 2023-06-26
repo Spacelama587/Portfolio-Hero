@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector('.ham');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuLinks = mobileMenu.querySelectorAll('a');
@@ -23,12 +22,11 @@ menuLinks.forEach((link) => {
   });
 });
 
-window.onload = function() {
-  var dynProj = document.querySelector('.dyn-proj');
-  var section = document.createElement('section');
+window.onload = function () {
+  let dynProj = document.querySelector('.dyn-proj');
+  let section = document.createElement('section');
   section.setAttribute('class', 'works');
   section.setAttribute('id', 'portfolio-red');
-  
   section.innerHTML = `
     <div class="title-works">
       <h4>My Recent Works</h4>
@@ -276,7 +274,6 @@ window.onload = function() {
   
   dynProj.appendChild(section);
 
-
 const project = [{
   id: 1,
   name: 'Multi Post Stories',
@@ -289,7 +286,7 @@ const project = [{
   liveLink: 'https://example.com/project1',
   sourceLink: 'https://github.com/user/project1',
 },
-{
+ {
   id: 2,
   name: 'Professional Printing',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
