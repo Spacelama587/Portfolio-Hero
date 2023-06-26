@@ -1229,7 +1229,6 @@ form {
   .image-text-container {
     flex-direction: column;
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -1296,7 +1295,6 @@ form {
   .links a {
     margin-bottom: 150px;
   }
-
 }
 
 .footer-ul li img {
