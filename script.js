@@ -22,6 +22,161 @@ menuLinks.forEach((link) => {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  var section = document.createElement('section');
+  section.className = 'works';
+  section.id = 'portfolio-red';
+  var titleWorksDiv = document.createElement('div');
+  titleWorksDiv.className = 'title-works';
+  var title = document.createElement('h4');
+  title.textContent = 'My Recent Works';
+  var lineDesktopDiv = document.createElement('div');
+  lineDesktopDiv.className = 'line-desktop';
+  var hr = document.createElement('hr');
+  titleWorksDiv.appendChild(title);
+  lineDesktopDiv.appendChild(hr);
+  titleWorksDiv.appendChild(lineDesktopDiv);
+  section.appendChild(titleWorksDiv);
+  var work1ImgDiv = document.createElement('div');
+  work1ImgDiv.className = 'work1img';
+  var work1Img = document.createElement('img');
+  work1Img.src = 'images/workImg1.svg';
+  work1ImgDiv.appendChild(work1Img);
+  section.appendChild(work1ImgDiv);
+  var project1Div = document.createElement('div');
+  project1Div.className = 'project1';
+
+  var imgProject1Div = document.createElement('div');
+  imgProject1Div.className = 'ImgProject1';
+  var imgProject1 = document.createElement('img');
+  imgProject1.src = 'images/ImgProject1-desktop.svg';
+  imgProject1Div.appendChild(imgProject1);
+  var workTitleContentTagDiv = document.createElement('div');
+  workTitleContentTagDiv.className = 'work-titl-content-tag';
+  var work1TitleDiv = document.createElement('div');
+  work1TitleDiv.className = 'work1-title';
+  var work1Title = document.createElement('h4');
+  work1Title.textContent = 'Multi-Post Stories';
+  work1TitleDiv.appendChild(work1Title);
+  var work1ContentDiv = document.createElement('div');
+  work1ContentDiv.className = 'work1content';
+  var work1Content = document.createElement('p');
+  work1Content.innerHTML = "A daily selection of privately personalized<br />reads; no accounts or sign-ups required.<br />Has been the industry's standard dummy<br />text ever since the 1500s, when an<br />unknown printer took a standard dummy<br />text.";
+  work1ContentDiv.appendChild(work1Content);
+  var work1TagDiv = document.createElement('div');
+  work1TagDiv.className = 'work1-tag';
+  var work1TagCssDiv = document.createElement('div');
+  work1TagCssDiv.className = 'work1tag-css';
+  var work1TagCssImg = document.createElement('img');
+  work1TagCssImg.src = 'images/Tag.png';
+  work1TagCssDiv.appendChild(work1TagCssImg);
+  var work1TagHtmlDiv = document.createElement('div');
+  work1TagHtmlDiv.className = 'work1tag-html';
+  var work1TagHtmlImg = document.createElement('img');
+  work1TagHtmlImg.src = 'images/Tag (1).png';
+  work1TagHtmlDiv.appendChild(work1TagHtmlImg);
+  var work1TagBootstrapDiv = document.createElement('div');
+  work1TagBootstrapDiv.className = 'work1tag-bootstrap';
+  var work1TagBootstrapImg = document.createElement('img');
+  work1TagBootstrapImg.src = 'images/Tag (2).png';
+  work1TagBootstrapDiv.appendChild(work1TagBootstrapImg);
+  var work1TagRubyDiv = document.createElement('div');
+  work1TagRubyDiv.className = 'work1tag-ruby';
+  var work1TagRubyImg = document.createElement('img');
+  work1TagRubyImg.src = 'images/Tag (3).png';
+  work1TagRubyDiv.appendChild(work1TagRubyImg);
+  work1TagDiv.appendChild(work1TagCssDiv);
+  work1TagDiv.appendChild(work1TagHtmlDiv);
+  work1TagDiv.appendChild(work1TagBootstrapDiv);
+  work1TagDiv.appendChild(work1TagRubyDiv);
+  workTitleContentTagDiv.appendChild(work1TitleDiv);
+  workTitleContentTagDiv.appendChild(work1ContentDiv);
+  workTitleContentTagDiv.appendChild(work1TagDiv);
+
+  project1Div.appendChild(imgProject1Div);
+  project1Div.appendChild(workTitleContentTagDiv);
+  section.appendChild(project1Div);
+  var buttonWork1DesktopDiv = document.createElement('div');
+  buttonWork1DesktopDiv.className = 'button-work1-desktop';
+
+  var buttonWork1 = document.createElement('button');
+  buttonWork1.className = 'button-work1';
+  buttonWork1.textContent = 'See project';
+
+  buttonWork1DesktopDiv.appendChild(buttonWork1);
+
+  section.appendChild(buttonWork1DesktopDiv);
+
+  var projectsDiv = document.createElement('div');
+  projectsDiv.className = 'projects';
+
+  var work2Img1Div = document.createElement('div');
+  work2Img1Div.className = 'work2img-1';
+
+  var work2Content1Div = document.createElement('div');
+  work2Content1Div.className = 'work2-content-1';
+
+  var work2ContentDiv = document.createElement('div');
+  work2ContentDiv.className = 'work2-content';
+
+  var work2ContentTitle = document.createElement('h2');
+  work2ContentTitle.textContent = 'Profesional Art Printing Data';
+
+  var work2ContentPara = document.createElement('p');
+  work2ContentPara.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.";
+
+  work2ContentDiv.appendChild(work2ContentTitle);
+  work2ContentDiv.appendChild(work2ContentPara);
+
+  work2Content1Div.appendChild(work2ContentDiv);
+
+  work2Img1Div.appendChild(work2Content1Div);
+
+  var work2Tag1Div = document.createElement('div');
+  work2Tag1Div.className = 'work2tag-1';
+
+  var work2TagDiv = document.createElement('div');
+  work2TagDiv.className = 'work2tag';
+
+  var work2TagHtmlDiv = document.createElement('div');
+  work2TagHtmlDiv.className = 'work2tag-html';
+
+  var work2TagHtmlImg = document.createElement('img');
+  work2TagHtmlImg.src = './images/Tag (4).png';
+
+  work2TagHtmlDiv.appendChild(work2TagHtmlImg);
+
+  var work2TagCssDiv = document.createElement('div');
+  work2TagCssDiv.className = 'work2tag-css';
+
+  var work2TagCssImg = document.createElement('img');
+  work2TagCssImg.src = './images/Tag (5).png';
+
+  work2TagCssDiv.appendChild(work2TagCssImg);
+
+  var work2TagBootstrapDiv = document.createElement('div');
+  work2TagBootstrapDiv.className = 'work2tag-bootstrap';
+
+  var work2TagBootstrapImg = document.createElement('img');
+  work2TagBootstrapImg.src = './images/Tag (6).png';
+
+  work2TagBootstrapDiv.appendChild(work2TagBootstrapImg);
+
+  work2TagDiv.appendChild(work2TagHtmlDiv);
+  work2TagDiv.appendChild(work2TagCssDiv);
+  work2TagDiv.appendChild(work2TagBootstrapDiv);
+
+  work2Tag1Div.appendChild(work2TagDiv);
+
+  projectsDiv.appendChild(work2Img1Div);
+  projectsDiv.appendChild(work2Tag1Div);
+
+  section.appendChild(projectsDiv);
+
+  document.body.appendChild(section);
+});
+
 const project = [{
   id: 1,
   name: 'Multi Post Stories',
