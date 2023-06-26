@@ -24,66 +24,66 @@ menuLinks.forEach((link) => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  let section = document.createElement('section');
+  const section = document.createElement('section');
   section.className = 'works';
   section.id = 'portfolio-red';
-  let titleWorksDiv = document.createElement('div');
+  const titleWorksDiv = document.createElement('div');
   titleWorksDiv.className = 'title-works';
-  let title = document.createElement('h4');
+  const title = document.createElement('h4');
   title.textContent = 'My Recent Works';
-  let lineDesktopDiv = document.createElement('div');
+  const lineDesktopDiv = document.createElement('div');
   lineDesktopDiv.className = 'line-desktop';
-  let hr = document.createElement('hr');
+  const hr = document.createElement('hr');
   titleWorksDiv.appendChild(title);
   lineDesktopDiv.appendChild(hr);
   titleWorksDiv.appendChild(lineDesktopDiv);
   section.appendChild(titleWorksDiv);
-  let work1ImgDiv = document.createElement('div');
+  const work1ImgDiv = document.createElement('div');
   work1ImgDiv.className = 'work1img';
-  let work1Img = document.createElement('img');
+  const work1Img = document.createElement('img');
   work1Img.src = 'images/workImg1.svg';
   work1ImgDiv.appendChild(work1Img);
   section.appendChild(work1ImgDiv);
-  let project1Div = document.createElement('div');
+  const project1Div = document.createElement('div');
   project1Div.className = 'project1';
 
-  let imgProject1Div = document.createElement('div');
+  const imgProject1Div = document.createElement('div');
   imgProject1Div.className = 'ImgProject1';
-  let imgProject1 = document.createElement('img');
+  const imgProject1 = document.createElement('img');
   imgProject1.src = 'images/ImgProject1-desktop.svg';
   imgProject1Div.appendChild(imgProject1);
-  let workTitleContentTagDiv = document.createElement('div');
+  const workTitleContentTagDiv = document.createElement('div');
   workTitleContentTagDiv.className = 'work-titl-content-tag';
-  let work1TitleDiv = document.createElement('div');
+  const work1TitleDiv = document.createElement('div');
   work1TitleDiv.className = 'work1-title';
-  let work1Title = document.createElement('h4');
+  const work1Title = document.createElement('h4');
   work1Title.textContent = 'Multi-Post Stories';
   work1TitleDiv.appendChild(work1Title);
-  let work1ContentDiv = document.createElement('div');
+  const work1ContentDiv = document.createElement('div');
   work1ContentDiv.className = 'work1content';
-  let work1Content = document.createElement('p');
+  const work1Content = document.createElement('p');
   work1Content.innerHTML = "A daily selection of privately personalized<br />reads; no accounts or sign-ups required.<br />Has been the industry's standard dummy<br />text ever since the 1500s, when an<br />unknown printer took a standard dummy<br />text.";
   work1ContentDiv.appendChild(work1Content);
-  let work1TagDiv = document.createElement('div');
+  const work1TagDiv = document.createElement('div');
   work1TagDiv.className = 'work1-tag';
   let work1TagCssDiv = document.createElement('div');
   work1TagCssDiv.className = 'work1tag-css';
-  let work1TagCssImg = document.createElement('img');
+  const work1TagCssImg = document.createElement('img');
   work1TagCssImg.src = 'images/Tag.png';
   work1TagCssDiv.appendChild(work1TagCssImg);
-  let work1TagHtmlDiv = document.createElement('div');
+  const work1TagHtmlDiv = document.createElement('div');
   work1TagHtmlDiv.className = 'work1tag-html';
-  let work1TagHtmlImg = document.createElement('img');
+  const work1TagHtmlImg = document.createElement('img');
   work1TagHtmlImg.src = 'images/Tag (1).png';
   work1TagHtmlDiv.appendChild(work1TagHtmlImg);
-  let work1TagBootstrapDiv = document.createElement('div');
+  const work1TagBootstrapDiv = document.createElement('div');
   work1TagBootstrapDiv.className = 'work1tag-bootstrap';
-  let work1TagBootstrapImg = document.createElement('img');
+  const work1TagBootstrapImg = document.createElement('img');
   work1TagBootstrapImg.src = 'images/Tag (2).png';
   work1TagBootstrapDiv.appendChild(work1TagBootstrapImg);
-  let work1TagRubyDiv = document.createElement('div');
+  const work1TagRubyDiv = document.createElement('div');
   work1TagRubyDiv.className = 'work1tag-ruby';
-  let work1TagRubyImg = document.createElement('img');
+  const work1TagRubyImg = document.createElement('img');
   work1TagRubyImg.src = 'images/Tag (3).png';
   work1TagRubyDiv.appendChild(work1TagRubyImg);
   work1TagDiv.appendChild(work1TagCssDiv);
@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
   project1Div.appendChild(imgProject1Div);
   project1Div.appendChild(workTitleContentTagDiv);
   section.appendChild(project1Div);
-  let buttonWork1DesktopDiv = document.createElement('div');
+  const buttonWork1DesktopDiv = document.createElement('div');
   buttonWork1DesktopDiv.className = 'button-work1-desktop';
 
-  let buttonWork1 = document.createElement('button');
+  const buttonWork1 = document.createElement('button');
   buttonWork1.className = 'button-work1';
   buttonWork1.textContent = 'See project';
 
@@ -108,22 +108,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   section.appendChild(buttonWork1DesktopDiv);
 
-  let projectsDiv = document.createElement('div');
+  const projectsDiv = document.createElement('div');
   projectsDiv.className = 'projects';
 
-  let work2Img1Div = document.createElement('div');
+  const work2Img1Div = document.createElement('div');
   work2Img1Div.className = 'work2img-1';
 
-  let work2Content1Div = document.createElement('div');
+  const work2Content1Div = document.createElement('div');
   work2Content1Div.className = 'work2-content-1';
 
-  let work2ContentDiv = document.createElement('div');
+  const work2ContentDiv = document.createElement('div');
   work2ContentDiv.className = 'work2-content';
 
-  let work2ContentTitle = document.createElement('h2');
+  const work2ContentTitle = document.createElement('h2');
   work2ContentTitle.textContent = 'Profesional Art Printing Data';
 
-  let work2ContentPara = document.createElement('p');
+  const work2ContentPara = document.createElement('p');
   work2ContentPara.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.";
 
   work2ContentDiv.appendChild(work2ContentTitle);
@@ -133,32 +133,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
   work2Img1Div.appendChild(work2Content1Div);
 
-  let work2Tag1Div = document.createElement('div');
+  const work2Tag1Div = document.createElement('div');
   work2Tag1Div.className = 'work2tag-1';
 
-  let work2TagDiv = document.createElement('div');
+  const work2TagDiv = document.createElement('div');
   work2TagDiv.className = 'work2tag';
 
-  let work2TagHtmlDiv = document.createElement('div');
+  const work2TagHtmlDiv = document.createElement('div');
   work2TagHtmlDiv.className = 'work2tag-html';
 
-  let work2TagHtmlImg = document.createElement('img');
+  const work2TagHtmlImg = document.createElement('img');
   work2TagHtmlImg.src = './images/Tag (4).png';
 
   work2TagHtmlDiv.appendChild(work2TagHtmlImg);
 
-  let work2TagCssDiv = document.createElement('div');
+  const work2TagCssDiv = document.createElement('div');
   work2TagCssDiv.className = 'work2tag-css';
 
-  let work2TagCssImg = document.createElement('img');
+  const work2TagCssImg = document.createElement('img');
   work2TagCssImg.src = './images/Tag (5).png';
 
   work2TagCssDiv.appendChild(work2TagCssImg);
 
-  let work2TagBootstrapDiv = document.createElement('div');
+  const work2TagBootstrapDiv = document.createElement('div');
   work2TagBootstrapDiv.className = 'work2tag-bootstrap';
 
-  let work2TagBootstrapImg = document.createElement('img');
+  const work2TagBootstrapImg = document.createElement('img');
   work2TagBootstrapImg.src = './images/Tag (6).png';
 
   work2TagBootstrapDiv.appendChild(work2TagBootstrapImg);
