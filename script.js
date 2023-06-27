@@ -621,42 +621,20 @@ window.onload = function () {
   }
 
   button7.addEventListener('click', openModalWithProject7);
+  const emailInput = document.getElementById('email');
+const errorText = document.getElementById('error');
+
 };
 
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const emailInput = document.getElementById('email');
-  const email = emailInput.value;
+const emailInput = document.getElementById('email');
+const errorText = document.getElementById('error');
+const submitButton = document.getElementById('submit');
 
-  if (email === email.toLowerCase()) {
-    document.getElementById('error').style.display = 'none';
+submitButton.addEventListener('click', (event) => {
+  if (emailInput.validity.patternMismatch) {
+    event.preventDefault();
+    errorText.textContent = 'Email must be in lowercase.';
   } else {
-    document.getElementById('error').textContent = 'Email must be in lowercase.';
-    document.getElementById('error').style.display = 'block';
-    return;
+    errorText.textContent = '';
   }
-});
-
-function saveFormData() {
-  const form = document.getElementById('contact-form');
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
-  localStorage.setItem('formData', JSON.stringify(data));
-}
-
-function loadFormData() {
-  const form = document.getElementById('contact-form');
-  const savedData = localStorage.getItem('formData');
-  if (savedData) {
-    const data = JSON.parse(savedData);
-    for (let key in data) {
-      if (form.elements[key]) {
-        form.elements[key].value = data[key];
-      }
-    }
-  }
-}
-
-document.getElementById('contact-form').addEventListener('change', saveFormData);
-
-window.addEventListener('load', loadFormData);
+})

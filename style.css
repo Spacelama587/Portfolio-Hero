@@ -1308,7 +1308,12 @@ form {
   cursor: pointer;
 }
 
+.error-btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
 #error {
-  color: red;
-  display: none;
+  color: #ff0000;
+  font-family: 'Crete Round', serif;
 }
