@@ -621,9 +621,6 @@ window.onload = function () {
   }
 
   button7.addEventListener('click', openModalWithProject7);
-  const emailInput = document.getElementById('email');
-const errorText = document.getElementById('error');
-
 };
 
 const emailInput = document.getElementById('email');
@@ -637,4 +634,4 @@ submitButton.addEventListener('click', (event) => {
   } else {
     errorText.textContent = '';
   }
-})
+});
