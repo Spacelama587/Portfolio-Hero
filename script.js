@@ -624,7 +624,7 @@ window.onload = function () {
 };
 
 document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
   const emailInput = document.getElementById('email');
   const email = emailInput.value;
 
