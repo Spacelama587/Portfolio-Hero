@@ -1307,3 +1307,8 @@ form {
 .projects {
   cursor: pointer;
 }
+
+#error{
+  color: red; 
+  display: none;
+}
