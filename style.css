@@ -1308,7 +1308,7 @@ form {
   cursor: pointer;
 }
 
-#error{
-  color: red; 
+#error {
+  color: red;
   display: none;
 }

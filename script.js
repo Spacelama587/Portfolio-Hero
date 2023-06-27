@@ -623,19 +623,16 @@ window.onload = function () {
   button7.addEventListener('click', openModalWithProject7);
 };
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
+document.getElementById('contact-form').addEventListener('submit', (event) => {
   event.preventDefault(); 
-
-  var emailInput = document.getElementById("email");
-  var email = emailInput.value;
+  const emailInput = document.getElementById('email');
+  const email = emailInput.value;
 
   if (email === email.toLowerCase()) {
-   
-    document.getElementById("error").style.display = "none";
-    document.getElementById("contact-form").submit();
+    document.getElementById('error').style.display = 'none';
+    document.getElementById('contact-form').submit();
   } else {
-   
-    document.getElementById("error").textContent = "Email must be in lowercase.";
-    document.getElementById("error").style.display = "block";
+    document.getElementById('error').textContent = 'Email must be in lowercase.';
+    document.getElementById('error').style.display = 'block';
   }
 });
