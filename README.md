@@ -137,7 +137,7 @@ Deploy this project on any websever
 👤 ** Vijith **
 
 - GitHub: [@githubhandle] https://github.com/Spacelama587
-- LinkedIn: [LinkedIn] https://www.linkedin.com/in/v/
+- LinkedIn: [LinkedIn] https://www.linkedin.com/in/v-24239b269/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

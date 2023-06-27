@@ -630,9 +630,33 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
 
   if (email === email.toLowerCase()) {
     document.getElementById('error').style.display = 'none';
-    document.getElementById('contact-form').submit();
   } else {
     document.getElementById('error').textContent = 'Email must be in lowercase.';
     document.getElementById('error').style.display = 'block';
+    return;
   }
 });
+
+function saveFormData() {
+  const form = document.getElementById('contact-form');
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  localStorage.setItem('formData', JSON.stringify(data));
+}
+
+function loadFormData() {
+  const form = document.getElementById('contact-form');
+  const savedData = localStorage.getItem('formData');
+  if (savedData) {
+    const data = JSON.parse(savedData);
+    for (let key in data) {
+      if (form.elements[key]) {
+        form.elements[key].value = data[key];
+      }
+    }
+  }
+}
+
+document.getElementById('contact-form').addEventListener('change', saveFormData);
+
+window.addEventListener('load', loadFormData);
