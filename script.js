@@ -635,3 +635,5 @@ submitButton.addEventListener('click', (event) => {
     errorText.textContent = '';
   }
 });
+
+//preserve data in browser
