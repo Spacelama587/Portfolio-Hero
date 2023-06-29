@@ -622,3 +622,16 @@ window.onload = function () {
 
   button7.addEventListener('click', openModalWithProject7);
 };
+
+const emailInput = document.getElementById('email');
+const errorText = document.getElementById('error');
+const submitButton = document.getElementById('submit');
+
+submitButton.addEventListener('click', (event) => {
+  if (emailInput.validity.patternMismatch) {
+    event.preventDefault();
+    errorText.textContent = 'Email must be in lowercase.';
+  } else {
+    errorText.textContent = '';
+  }
+});

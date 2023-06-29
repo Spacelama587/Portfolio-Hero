@@ -1307,3 +1307,13 @@ form {
 .projects {
   cursor: pointer;
 }
+
+.error-btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#error {
+  color: #f00;
+  font-family: 'Crete Round', serif;
+}

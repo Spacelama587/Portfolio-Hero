@@ -213,45 +213,24 @@
     </div>
     
     
-    <form
-    action="https://formspree.io/f/xvonjbab"
-      method="POST"
-      id="contact-form"
-    >
+    <form action="https://formspree.io/f/xvonjbab" method="POST" id="contact-form">
       <fieldset>
-      
-        <input
-          class="inputs"
-          type="text"
-          name="full-name"
-          id="fullname"
-          maxlength="30"
-          placeholder="Full name"
-          required
-        />
-            
-        <input
-          class="inputs"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email address"
-          required
-        />
-        
-        <textarea
-          name="comments"
-          id="text-area"
-          maxlength="500"
-          placeholder="write me something..."
-          required
-        ></textarea>
+    
+        <input class="inputs" type="text" name="full-name" id="fullname" maxlength="30" placeholder="Full name" required />
+    
+        <input class="inputs" type="email" name="email" id="email" placeholder="Email address" pattern="[a-z]+@[a-z]+\.[a-z]+" required />
+    
+        <textarea name="comments" id="text-area" maxlength="500" placeholder="Write me something..." required></textarea>
       </fieldset> 
-
-
+    <div class="error-btn-div">
       <!-- the button -->
       <input type="submit" id="submit" name="submit" value="Get in touch" />
+      <div class="error-message">
+      <p id="error"></p>
+    </div>
+  </div>
     </form>
+
   </section>
   <div class="footer-line" >
     <hr >
