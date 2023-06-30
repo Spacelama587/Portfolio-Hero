@@ -622,24 +622,24 @@ window.onload = function () {
 
   button7.addEventListener('click', openModalWithProject7);
 
-  let data = JSON.parse(localStorage.getItem('formData'));
-    if (data) {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
     document.getElementById('fullname').value = data.name || '';
     document.getElementById('email').value = data.email || '';
     document.getElementById('text-area').value = data.message || '';
   }
 
-  let inputs = document.getElementsByClassName('inputs');
-      for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('input', function() {
-      let data = {
+  const inputs = document.getElementsByClassName('inputs');
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', () => {
+      const data = {
         name: document.getElementById('fullname').value,
         email: document.getElementById('email').value,
-        message: document.getElementById('text-area').value
+        message: document.getElementById('text-area').value,
       };
-        localStorage.setItem('formData', JSON.stringify(data));
-  });
-}
+      localStorage.setItem('formData', JSON.stringify(data));
+    });
+  }
 };
 
 const emailInput = document.getElementById('email');
