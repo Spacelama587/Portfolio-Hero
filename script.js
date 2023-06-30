@@ -630,7 +630,7 @@ window.onload = function () {
   }
 
   const inputs = document.getElementsByClassName('inputs');
-  for (let i = 0; i < inputs.length;  i += 1) {
+  for (let i = 0; i < inputs.length; i += 1) {
     inputs[i].addEventListener('input', () => {
       const data = {
         name: document.getElementById('fullname').value,
