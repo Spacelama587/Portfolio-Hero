@@ -621,6 +621,26 @@ window.onload = function () {
   }
 
   button7.addEventListener('click', openModalWithProject7);
+
+  var data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
+    document.getElementById('fullname').value = data.name || '';
+    document.getElementById('email').value = data.email || '';
+    document.getElementById('text-area').value = data.message || '';
+  }
+
+  var inputs = document.getElementsByClassName('inputs');
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener('input', function() {
+    var data = {
+      name: document.getElementById('fullname').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('text-area').value
+    };
+    localStorage.setItem('formData', JSON.stringify(data));
+  });
+}
+
 };
 
 const emailInput = document.getElementById('email');
